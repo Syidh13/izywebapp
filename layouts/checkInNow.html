@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IZY.ai</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./media/fontawesome-pro-6.0.0-web/css/all.min.css">
+    <!-- alpine js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- slick cdn -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end slick cdn -->
+
+</head>
+
+<body class="bg-cs-background">
+    <!-- ========== Header Section ========== -->
+    <section x-data="{ open: false }">
+        <div class="relative z-40">
+            <div class="h-20 w-full bg-cs-background border-b fixed">
+                <div class="cs-container flex">
+                    <div class="my-auto w-full">
+                        <div class="flex justify-between w-full">
+                            <!-- logo for mobile -->
+                            <img src="./media/img/lg_IZY_Primary.svg" alt="" class="h-14 py-2 hidden md:block">
+                            <!-- end logo for mobile -->
+
+                            <!-- back header mobile -->
+                            <a href="./property-detail.html" class="my-auto block md:hidden">
+                                <div class="flex space-x-3">
+                                    <i class="fa-regular bg-slate-100 py-2 px-3 rounded-full  fa-chevron-left"></i>
+                                </div>
+                            </a>
+                            <!-- back header mobile -->
+
+                            <!-- logo for desktop -->
+                            <img src="./media/img/lg_IZY_Primary.svg" alt="" class="h-14 py-2 block md:hidden">
+                            <!-- end logo for desktop -->
+
+                            <!-- Menu center (desktop) -->
+                            <div class="bg-red-100 my-auto hidden md:block">
+                            </div>
+                            <!-- end Menu center (desktop) -->
+
+                            <!-- Menu (desktop) -->
+                            <div class="my-auto hidden md:block space-x-4">
+                                <a href="#">
+                                    <button
+                                        class="text-center text-cs-black font-titleRegular text-sm hover:text-primary-hover transition-colors">
+                                        Sign In</button>
+                                </a>
+                                <a href="#"
+                                    class="py-2 px-8 bg-primary hover:bg-primary-hover rounded-full transition-colors">
+                                    <button class="text-center">
+                                        <h1 class="text-white font-titleSemiBold text-sm">I'm a Guest</h1>
+                                    </button>
+                                </a>
+                            </div>
+                            <!-- end Menu (desktop) -->
+
+                            <div class="md:hidden flex">
+                                <!-- other button (mobile) -->
+                                <button @click="open = true" class="flex">
+                                    <div class="h-10 w-10 flex my-auto">
+                                        <i class="fa-regular fa-bars-staggered my-auto mx-auto"></i>
+                                    </div>
+                                </button>
+                                <!-- end other button (mobile) -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal for mobile -->
+        <section class="absolute w-screen z-50 h-screen top-0 left-0 md:hidden" x-show="open">
+            <!-- modul header -->
+            <div class="h-20 border-b fixed w-full bg-cs-background z-20">
+                <div class="cs-container flex">
+                    <div class="my-auto w-full">
+                        <div class="flex justify-between w-full">
+                            <!-- logo -->
+                            <img src="https://assets.website-files.com/61a5e47b1afd0c116d16aa40/61c858c1d1e9454dad996b41_island-logo-accent.svg"
+                                alt="" class="h-14 py-2">
+                            <!-- end logo -->
+                            <!-- other button (mobile) -->
+                            <button @click="open = !open" class="flex">
+                                <div class="h-10 w-10 flex my-auto">
+                                    <i class="fa-regular fa-xmark my-auto mx-auto"></i>
+                                </div>
+                            </button>
+                            <!-- end other button (mobile) -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modul header -->
+            <div class=" absolute top-20 ">
+                <div class="bg-cs-background w-full h-full fixed overflow-y-scroll pb-20">
+                    <!-- login button -->
+                    <div class="py-10 bg-primary/10">
+                        <a href="#" class="flex justify-center">
+                            <h1
+                                class="font-titleRegular text-sm py-2 px-3 border rounded-md border-primary text-primary">
+                                Login now</h1>
+                        </a>
+                    </div>
+                    <!-- end login button -->
+
+                    <div class="px-4 py-6 space-y-6">
+                        <!-- section account -->
+                        <div class="space-y-1">
+                            <h1 class="font-titleRegular text-xs text-cs-gray">Account</h1>
+                            <div class="space-y-1">
+                                <div>
+                                    <a href="#">
+                                        <h1 class="font-titleSemiBold text-base py-1">Choose Language</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end section account -->
+
+                        <!-- section account -->
+                        <div class="space-y-1">
+                            <h1 class="font-titleRegular text-xs text-cs-gray">Support and Information</h1>
+                            <div class="space-y-1">
+                                <div>
+                                    <a href="#">
+                                        <h1 class="font-titleSemiBold text-base py-1">About IZY</h1>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <h1 class="font-titleSemiBold text-base py-1">Terms and Condition</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end section account -->
+                    </div>
+                </div>
+            </div>
+            <!-- end modal for mobile -->
+        </section>
+        <!-- end modal for mobile -->
+    </section>
+    <!-- ========== End Header Section ========== -->
+
+
+    <!-- ============================== -->
+    <!-- ========== Main Body Section ========== -->
+    <!-- ============================== -->
+    <div class="absolute top-24 w-full">
+        <!-- back icon for desktop -->
+        <a href="./index.html">
+            <div class="cs-container pb-4 hidden md:flex md:space-x-3">
+                <i
+                    class="fa-solid fa-chevron-left py-2 px-3 rounded-full bg-primary/10 text-cs-black hover:bg-primary hover:text-cs-black transition-all"></i>
+                <h1 class="my-auto font-titleSemiBold text-sm text-cs-black">Back</h1>
+            </div>
+        </a>
+        <!-- end back icon for desktop -->
+
+        <!-- Check in now information -->
+        <section class="cs-container md:max-w-md md:border md:p-4 md:rounded-md space-y-4">
+            <div>
+                <h1 class="font-titleRegular text-center text-xs text-cs-gray">Check in Now!</h1>
+                <h1 class="font-titleSemiBold text-center tracking-tight text-xl text-cs-black">IZY Hotel</h1>
+            </div>
+            <div class="space-y-4">
+                <div class="flex justify-center space-x-2 md:space-x-0">
+                    <input type="text" name="" id=""
+                        class="border font-bodyRegular text-center rounded-md w-full text-cs-black text-sm p-2 my-auto"
+                        placeholder="Input your code in here">
+                    <a href="#" class="md:hidden">
+                        <i
+                            class="fa-solid fa-qrcode p-2.5 rounded-md border my-auto hover:bg-primary hover:text-white transition-colors hover:border-white"></i>
+                    </a>
+                </div>
+                <!-- button check in desktop -->
+                <div class="px-8">
+                    <a href="#">
+                        <h1
+                            class="font-titleSemiBold text-sm p-2  rounded-full border border-primary text-primary hover:text-white hover:bg-primary transition-colors text-center">
+                            Check In Now
+                        </h1>
+                    </a>
+                </div>
+            </div>
+            <!-- end button check in desktop -->
+            <div class="pt-4">
+                <h1 class="text-xs font-titleRegular text-center p-4 rounded-md bg-red-50 text-red-400">If you
+                    haven't got this code, you can ask
+                    the
+                    receptionist. And enjoy our features for ordering food and more.</h1>
+            </div>
+        </section>
+        <!-- end Check in now information -->
+
+
+
+    </div>
+    <!-- ============================== -->
+    <!-- ========== End Main Body Section ========== -->
+    <!-- ============================== -->
+
+
+
+
+
+
+
+
+    <!-- ============================== Link local ============================== -->
+    <!-- cdn jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- cdn slick -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- slick banner -->
+    <script src="./js/banner.js"></script>
+    <!-- ============================== end Link local ============================== -->
+
+</body>
+
+</html>

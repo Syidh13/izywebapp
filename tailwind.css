@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+/* ======== Container ======== */
+.cs-container {
+  @apply max-w-6xl mx-auto px-5 xl:px-0 h-full;
+}
+
+/* ======== padding ======== */
+.cs-py-section {
+  @apply md:py-10 py-6;
+}
+
+@tailwind utilities;
+
+@layer base {
+  /* Title */
+  @font-face {
+    font-family: 'AlbertSans-ExtraLight';
+    src: url('/layouts/media/font/AlbertSans-ExtraLight.ttf');
+  }
+  @font-face {
+    font-family: 'AlbertSans-Light';
+    src: url('/layouts/media/font/AlbertSans-Light.ttf');
+  }
+  @font-face {
+    font-family: 'AlbertSans-Regular';
+    src: url('/layouts/media/font/AlbertSans-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'AlbertSans-SemiBold';
+    src: url('/layouts/media/font/AlbertSans-SemiBold.ttf');
+  }
+
+  /* Body */
+  @font-face {
+    font-family: 'Barlow-Light';
+    src: url('/layouts/media/font/Barlow-Light.ttf');
+  }
+  @font-face {
+    font-family: 'Barlow-Medium';
+    src: url('/layouts/media/font/Barlow-Medium.ttf');
+  }
+  @font-face {
+    font-family: 'Barlow-Regular';
+    src: url('/layouts/media/font/Barlow-Regular.ttf');
+  }
+}

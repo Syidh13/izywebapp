@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IZY.ai</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./media/fontawesome-pro-6.0.0-web/css/all.min.css">
+    <!-- alpine js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- slick cdn -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end slick cdn -->
+
+</head>
+
+<body class="bg-cs-background">
+    <!-- ========== Header Section ========== -->
+    <section x-data="{ open: false }">
+        <div class="relative z-40">
+            <div class="h-20 w-full bg-cs-background border-b fixed">
+                <div class="cs-container flex">
+                    <div class="my-auto w-full">
+                        <div class="flex justify-between w-full">
+                            <!-- logo for desktop -->
+                            <img src="https://assets.website-files.com/61a5e47b1afd0c116d16aa40/61c858c1d1e9454dad996b41_island-logo-accent.svg"
+                                alt="" class="h-14 py-2 hidden md:block">
+                            <!-- end logo for desktop -->
+
+                            <!-- back header mobile -->
+                            <a href="index.html" class="my-auto block md:hidden">
+                                <div class="flex space-x-3">
+                                    <i class="fa-regular bg-slate-100 py-2 px-3 rounded-full  fa-chevron-left"></i>
+                                    <h1 class="font-titleSemiBold my-auto text-sm text-cs-black">Explorer Property</h1>
+                                </div>
+                            </a>
+                            <!-- back header mobile -->
+
+                            <!-- Menu center (desktop) -->
+                            <div class="bg-red-100 my-auto hidden md:block">
+                            </div>
+                            <!-- end Menu center (desktop) -->
+
+                            <!-- Menu end (desktop) -->
+                            <div class="my-auto hidden md:block space-x-4">
+                                <a href="#">
+                                    <button
+                                        class="text-center text-cs-black font-titleRegular text-sm hover:text-primary-hover transition-colors">
+                                        Sign In</button>
+                                </a>
+                                <a href="#"
+                                    class="py-2 px-8 bg-primary hover:bg-primary-hover rounded-full transition-colors">
+                                    <button class="text-center">
+                                        <h1 class="text-white font-titleSemiBold text-sm">I'm a Guest</h1>
+                                    </button>
+                                </a>
+                            </div>
+                            <!-- end Menu end (desktop) -->
+
+                            <div class="md:hidden flex">
+                                <!-- other button (mobile) -->
+                                <button @click="open = true" class="flex">
+                                    <div class="h-10 w-10 flex my-auto">
+                                        <i class="fa-regular fa-bars-staggered my-auto mx-auto"></i>
+                                    </div>
+                                </button>
+                                <!-- end other button (mobile) -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal for mobile -->
+        <div class="absolute w-screen z-50 h-screen top-0 left-0 md:hidden" x-show="open">
+            <!-- modul header -->
+            <div class="h-20 border-b fixed w-full bg-cs-background z-20">
+                <div class="cs-container flex">
+                    <div class="my-auto w-full">
+                        <div class="flex justify-between w-full">
+                            <!-- logo -->
+                            <img src="https://assets.website-files.com/61a5e47b1afd0c116d16aa40/61c858c1d1e9454dad996b41_island-logo-accent.svg"
+                                alt="" class="h-14 py-2">
+                            <!-- end logo -->
+                            <!-- other button (mobile) -->
+                            <button @click="open = !open" class="flex">
+                                <div class="h-10 w-10 flex my-auto">
+                                    <i class="fa-regular fa-xmark my-auto mx-auto"></i>
+                                </div>
+                            </button>
+                            <!-- end other button (mobile) -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modul header -->
+            <div class=" absolute top-20 ">
+                <div class="bg-cs-background w-full h-full fixed overflow-y-scroll pb-20">
+                    <div class="px-4">
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                        <div>test</div>
+                        <div>yoo</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end modal for mobile -->
+    </section>
+    <!-- ========== End Header Section ========== -->
+
+
+    <!-- ============================== -->
+    <!-- ========== Main Body Section ========== -->
+    <!-- ============================== -->
+    <div class="absolute top-24 w-full">
+        <!-- back icon for desktop -->
+        <a href="./index.html">
+            <div class="cs-container pb-4 hidden md:flex md:space-x-3">
+                <i
+                    class="fa-solid fa-chevron-left py-2 px-3 rounded-full bg-primary/10 text-cs-black hover:bg-primary hover:text-cs-black transition-all"></i>
+                <h1 class="my-auto font-titleSemiBold text-sm text-cs-black">Back</h1>
+            </div>
+        </a>
+        <!-- end back icon for desktop -->
+
+        <!-- input search -->
+        <div class="relative space-x-6">
+            <div class="flex justify-center">
+                <div class="w-full max-w-xl px-4 md:px-0">
+                    <div class="pointer-events-none absolute top-2 md:top-3 pl-4">
+                        <i class="fa-regular fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" placeholder="Search"
+                        class="pl-10 px-2 md:py-3 py-2.5 rounded-full border font-titleRegular text-sm w-full">
+                </div>
+            </div>
+        </div>
+        <!-- end input search -->
+
+        <!-- Note -->
+        <div class="cs-container md:max-w-xl py-4">
+            <h1 class="text-center font-titleRegular text-cs-gray text-sm p-2 rounded-md bg-slate-100">Select a property
+                and enter the property code
+                if you
+                are a guest at the property.</h1>
+        </div>
+        <!-- End Note -->
+
+        <!-- Property Card -->
+        <div class="py-10 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 md:gap-6 cs-container">
+            <!-- card 1 -->
+            <a href="./property-detail.html" class="col-span-1 md:space-y-3 space-y-2">
+                <img src="https://images.pexels.com/photos/2854553/pexels-photo-2854553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="" class="aspect-square w-full object-cover rounded-lg">
+                <!-- property name -->
+                <div>
+                    <h1 class="truncate font-titleSemiBold text-base text-cs-black line-clamp-2">IZY Hotel</h1>
+                    <h1 class="truncate font-body text-xs text-cs-body line-clamp-2">Jakarta, Indonesia</h1>
+                </div>
+            </a>
+            <!-- end card 1 -->
+
+            <!-- card 2 -->
+            <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                <img src="https://images.pexels.com/photos/14022373/pexels-photo-14022373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="" class="aspect-square w-full object-cover rounded-lg">
+                <!-- property name -->
+                <div>
+                    <h1 class="truncate font-titleSemiBold text-base text-cs-black line-clamp-2">Z Hotel Bali</h1>
+                    <h1 class="truncate font-body text-xs text-cs-body line-clamp-2">Ubud - Bali, Indonesia</h1>
+                </div>
+            </a>
+            <!-- end card 2 -->
+
+            <!-- card 3 -->
+            <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                <img src="https://images.pexels.com/photos/2290738/pexels-photo-2290738.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="" class="aspect-square w-full object-cover rounded-lg">
+                <!-- property name -->
+                <div>
+                    <h1 class="truncate font-titleSemiBold text-base text-cs-black line-clamp-2">Z Hotel Menteng</h1>
+                    <h1 class="truncate font-body text-xs text-cs-body line-clamp-2">Menteng,Jakarta - Indonesia</h1>
+                </div>
+            </a>
+            <!-- end card 3 -->
+
+            <!-- card 4 -->
+            <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                <img src="https://images.pexels.com/photos/2854553/pexels-photo-2854553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="" class="aspect-square w-full object-cover rounded-lg">
+                <!-- property name -->
+                <div>
+                    <h1 class="truncate font-titleSemiBold text-base text-cs-black line-clamp-2">IZ Resort Goa</h1>
+                    <h1 class="truncate font-body text-xs text-cs-body line-clamp-2">Goa - India</h1>
+                </div>
+            </a>
+            <!-- end card 4 -->
+
+            <!-- card 5 -->
+            <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                <img src="https://images.pexels.com/photos/14012238/pexels-photo-14012238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="" class="aspect-square w-full object-cover rounded-lg">
+                <!-- property name -->
+                <div>
+                    <h1 class="truncate font-titleSemiBold text-base text-cs-black line-clamp-2">IZ Hotel Delhi</h1>
+                    <h1 class="truncate font-body text-xs text-cs-body line-clamp-2">Delhi - India</h1>
+                </div>
+            </a>
+            <!-- end card 5 -->
+
+            <!-- card 6 -->
+            <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                <img src="https://images.pexels.com/photos/274249/pexels-photo-274249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="" class="aspect-square w-full object-cover rounded-lg">
+                <!-- property name -->
+                <div>
+                    <h1 class="truncate font-titleSemiBold text-base text-cs-black line-clamp-2">Z World Hotel Seoul
+                    </h1>
+                    <h1 class="truncate font-body text-xs text-cs-body line-clamp-2">Seoul - Republic of Korea</h1>
+                </div>
+            </a>
+            <!-- end card 6 -->
+
+            <!-- card 7 -->
+            <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                <img src="https://images.pexels.com/photos/5615795/pexels-photo-5615795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="" class="aspect-square w-full object-cover rounded-lg">
+                <!-- property name -->
+                <div>
+                    <h1 class="truncate font-titleSemiBold text-base text-cs-black line-clamp-2">Z Hotel Vietnam</h1>
+                    <h1 class="truncate font-body text-xs text-cs-body line-clamp-2">Ho Chi Minh City - Vietnam</h1>
+                </div>
+            </a>
+            <!-- end card 7 -->
+
+            <!-- card 8 -->
+            <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                <img src="https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="" class="aspect-square w-full object-cover rounded-lg">
+                <!-- property name -->
+                <div>
+                    <h1 class="truncate font-titleSemiBold text-base text-cs-black line-clamp-2">Z Singapore
+                        Yogyakarta
+                    </h1>
+                    <h1 class="truncate font-body text-xs text-cs-body line-clamp-2">Singapore</h1>
+                </div>
+            </a>
+            <!-- end card 8 -->
+
+            <!-- card 9 -->
+            <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                <img src="https://images.pexels.com/photos/261411/pexels-photo-261411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="" class="aspect-square w-full object-cover rounded-lg">
+                <!-- property name -->
+                <div>
+                    <h1 class=" font-titleSemiBold text-base text-cs-black line-clamp-2">Z Singapore
+                    </h1>
+                    <h1 class="truncate font-body text-xs text-cs-body line-clamp-2">Singapore</h1>
+                </div>
+            </a>
+            <!-- end card 9 -->
+
+            <!-- card 10 -->
+            <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                <img src="https://images.pexels.com/photos/2506988/pexels-photo-2506988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="" class="aspect-square w-full object-cover rounded-lg">
+                <!-- property name -->
+                <div>
+                    <h1 class="truncate font-titleSemiBold text-base text-cs-black line-clamp-2">Hospitality 360
+                    </h1>
+                    <h1 class="truncate font-body text-xs text-cs-body line-clamp-2">Philipines</h1>
+                </div>
+            </a>
+            <!-- end card 10 -->
+
+            <!-- card 11 (desktop) -->
+            <a href="#" class="col-span-1 md:space-y-3 space-y-2 hidden md:block">
+                <img src="https://images.pexels.com/photos/764830/pexels-photo-764830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="" class="aspect-square w-full object-cover rounded-lg">
+                <!-- property name -->
+                <div>
+                    <h1 class=" font-titleSemiBold text-base text-cs-black line-clamp-2">AllStay Ecotel
+                        Yogyakarta
+                    </h1>
+                    <h1 class="truncate font-body text-xs text-cs-body line-clamp-2">Yogyakarta, Indonesia</h1>
+                </div>
+            </a>
+            <!-- end card 11 (desktop) -->
+
+            <!-- card 12 (desktop) -->
+            <a href="#" class="col-span-1 md:space-y-3 space-y-2 hidden md:block">
+                <img src="https://images.pexels.com/photos/1458457/pexels-photo-1458457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="" class="aspect-square w-full object-cover rounded-lg">
+                <!-- property name -->
+                <div>
+                    <h1 class="truncate font-titleSemiBold text-base text-cs-black line-clamp-2">AllStay Ecotel
+                        Yogyakarta
+                    </h1>
+                    <h1 class="truncate font-body text-xs text-cs-body line-clamp-2">Yogyakarta, Indonesia</h1>
+                </div>
+            </a>
+            <!-- end card 12 (desktop) -->
+
+        </div>
+        <!-- End Property Card -->
+
+    </div>
+    <!-- ============================== -->
+    <!-- ========== End Main Body Section ========== -->
+    <!-- ============================== -->
+
+
+
+
+
+
+
+
+    <!-- ============================== Link local ============================== -->
+    <!-- cdn jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- cdn slick -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- slick banner -->
+    <script src="./js/banner.js"></script>
+    <!-- ============================== end Link local ============================== -->
+
+</body>
+
+</html>
