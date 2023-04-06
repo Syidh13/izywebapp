@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IZY.ai</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./media/fontawesome-pro-6.0.0-web/css/all.min.css">
+    <!-- alpine js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- slick cdn -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end slick cdn -->
+
+</head>
+
+<body class="bg-cs-background">
+    <!-- ========== FAB Chat Section ========== -->
+    <section class=" absolute z-20 bottom-20 right-16">
+        <div class=" fixed">
+            <a href="#">
+                <i
+                    class="fa-regular fa-messages p-4 rounded-full bg-primary hover:bg-primary-hover border-2 transition-colors drop-shadow-md border-white text-white"></i>
+            </a>
+        </div>
+    </section>
+    <!-- ========== end FAB Chat Section ========== -->
+
+    <!-- ========== Header Section ========== -->
+    <section x-data="{ open: false }">
+        <div class="relative z-40">
+            <div class="h-20 w-full bg-cs-background border-b fixed">
+                <div class="cs-container flex">
+                    <div class="my-auto w-full">
+                        <div class="flex justify-between w-full">
+                            <!-- logo -->
+                            <img src="./media/img/lg_test.jpg" alt="" class="h-14 py-2 ">
+                            <!-- end logo -->
+
+                            <!-- Menu center (desktop) -->
+                            <div class="bg-red-100 my-auto hidden md:block">
+                                <!-- <a href="#">menu 1</a>
+                            <a href="#">menu 1</a> -->
+                            </div>
+                            <!-- end Menu center (desktop) -->
+
+                            <!-- Menu end (desktop) -->
+                            <div class="my-auto hidden md:block space-x-4">
+                                <button
+                                    class="text-center border py-2 px-8 bg-white hover:bg-primary transition-colors hover:border-white text-cs-black hover:text-white rounded-full">
+                                    <h1 class=" font-titleRegular text-sm">Syidh Al Rasyid</h1>
+                                </button>
+                            </div>
+                            <!-- end Menu end (desktop) -->
+
+                            <div class="md:hidden flex">
+                                <!-- other button (mobile) -->
+                                <button @click="open = true" class="flex">
+                                    <div class="h-10 w-10 flex my-auto">
+                                        <i class="fa-regular fa-bars-staggered my-auto mx-auto"></i>
+                                    </div>
+                                </button>
+                                <!-- end other button (mobile) -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal for mobile -->
+        <section class="absolute w-screen z-50 h-screen top-0 left-0 md:hidden" x-show="open">
+            <!-- modul header -->
+            <div class="h-20 border-b fixed w-full bg-cs-background z-20">
+                <div class="cs-container flex">
+                    <div class="my-auto w-full">
+                        <div class="flex justify-between w-full">
+                            <!-- logo -->
+                            <img src="https://assets.website-files.com/61a5e47b1afd0c116d16aa40/61c858c1d1e9454dad996b41_island-logo-accent.svg"
+                                alt="" class="h-14 py-2">
+                            <!-- end logo -->
+                            <!-- other button (mobile) -->
+                            <button @click="open = !open" class="flex">
+                                <div class="h-10 w-10 flex my-auto">
+                                    <i class="fa-regular fa-xmark my-auto mx-auto"></i>
+                                </div>
+                            </button>
+                            <!-- end other button (mobile) -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modul header -->
+            <div class=" absolute top-20 ">
+                <div class="bg-cs-background w-full h-full fixed overflow-y-scroll pb-20">
+                    <!-- login button -->
+                    <div class="py-10 bg-primary/10">
+                        <a href="#" class="flex justify-center">
+                            <h1
+                                class="font-titleRegular text-sm py-2 px-3 border rounded-md border-primary text-primary">
+                                Login now</h1>
+                        </a>
+                    </div>
+                    <!-- end login button -->
+
+                    <div class="px-4 py-6 space-y-6">
+                        <!-- section account -->
+                        <div class="space-y-1">
+                            <h1 class="font-titleRegular text-xs text-cs-gray">Account</h1>
+                            <div class="space-y-1">
+                                <div>
+                                    <a href="#">
+                                        <h1 class="font-titleSemiBold text-base py-1">Choose Language</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end section account -->
+
+                        <!-- section account -->
+                        <div class="space-y-1">
+                            <h1 class="font-titleRegular text-xs text-cs-gray">Support and Information</h1>
+                            <div class="space-y-1">
+                                <div>
+                                    <a href="#">
+                                        <h1 class="font-titleSemiBold text-base py-1">About IZY</h1>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <h1 class="font-titleSemiBold text-base py-1">Terms and Condition</h1>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end section account -->
+                    </div>
+                </div>
+            </div>
+            <!-- end modal for mobile -->
+        </section>
+        <!-- end modal for mobile -->
+    </section>
+    <!-- ========== End Header Section ========== -->
+
+
+
+    <div class="absolute top-24 w-full">
+        <!-- ========== hero Section ========== -->
+        <section class="relative">
+            <div class="px-4">
+                <div class="">
+                    <img src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="h-96 w-screen object-cover rounded-lg">
+                </div>
+            </div>
+            <!-- absolute -->
+            <div class="absolute w-full h-96 bottom-0 px-4">
+                <div class="rounded-lg h-full">
+                    <div class="cs-container relative">
+                        <div class="w-full bottom-0 absolute left-0 md:px-4 lg:px-0">
+                            <div class="flex justify-center md:justify-normal">
+                                <div class="bg-white/80 w-full max-w-sm rounded-t-md space-y-3 backdrop-blur-sm">
+                                    <div class="text-center border-b py-4">
+                                        <h1 class="font-titleRegular text-cs-gray text-xs">Welcome,</h1>
+                                        <h1 class="font-titleSemiBold text-cs-black text-xl tracking-tight">Mr. Syidh Al
+                                            Rasyid</h1>
+                                    </div>
+                                    <div class="grid grid-cols-2 divide-x gap-3">
+                                        <div class="col-span-1 text-center py-4 px-2">
+                                            <h1 class="text-xs font-titleLight text-cs-gray">Room Number</h1>
+                                            <h1 class="text-lg font-titleRegular text-cs-black">013</h1>
+                                        </div>
+                                        <div class="col-span-1 text-center py-4 px-2">
+                                            <div class="col-span-1 text-center">
+                                                <h1 class="text-xs font-titleLight text-cs-gray">Check Out</h1>
+                                                <h1 class="text-lg font-titleRegular text-cs-black">31 December 2023
+                                                </h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end absolute -->
+        </section>
+        <!-- ========== end hero Section ========== -->
+
+        <!-- ========== main card Section ========== -->
+        <section class="relative cs-container cs-py-section pt-12 space-y-4">
+            <div class="md:flex justify-between">
+                <div>
+                    <h1 class="font-titleSemiBold text-2xl">Our Services</h1>
+                    <h2 class="font-bodyLight text-cs-body text-sm">Explore fascinating properties to start your
+                        journey
+                    </h2>
+                </div>
+            </div>
+
+
+            <!-- button services -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+
+                <div class="lg:col-span-1 md:col-span-1 col-span-2">
+                    <a href="#">
+                        <div class="relative h-full">
+                            <img src="https://images.pexels.com/photos/3771110/pexels-photo-3771110.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                                alt="" class="object-cover aspect-video h-full w-full">
+                            <div class="absolute top-0 bg-black/25 w-full h-full">
+                                <div class="flex justify-center h-full">
+                                    <div class="my-auto font-titleRegular text-base text-white drop-shadow-sm">Food and
+                                        Beverage
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div
+                    class="md:col-span-2 lg:col-span-3 col-span-2 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3">
+
+                    <a href="#">
+                        <div class="relative h-full">
+                            <img src="https://images.pexels.com/photos/6466292/pexels-photo-6466292.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                                alt="" class="object-cover aspect-video h-full w-full">
+                            <div class="absolute top-0 bg-black/25 w-full h-full">
+                                <div class="flex justify-center h-full">
+                                    <div
+                                        class="my-auto font-titleRegular text-base text-white drop-shadow-sm text-center line-clamp-2 px-2">
+                                        Food and
+                                        Beverage Beverage Beverage Food and
+                                        Beverage Beverage Beverage
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="relative h-full">
+                            <img src="https://images.pexels.com/photos/15195270/pexels-photo-15195270.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                                alt="" class="object-cover aspect-video h-full w-full">
+                            <div class="absolute top-0 bg-black/25 w-full h-full">
+                                <div class="flex justify-center h-full">
+                                    <div class="my-auto font-titleSemiBold text-base text-white drop-shadow-sm">Services
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="relative h-full">
+                            <img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                                alt="" class="object-cover aspect-video h-full w-full">
+                            <div class="absolute top-0 bg-black/25 w-full h-full">
+                                <div class="flex justify-center h-full">
+                                    <div class="my-auto font-titleSemiBold text-base text-white drop-shadow-sm">Services
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="relative h-full">
+                            <img src="https://images.pexels.com/photos/4959873/pexels-photo-4959873.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                                alt="" class="object-cover aspect-video h-full w-full">
+                            <div class="absolute top-0 bg-black/25 w-full h-full">
+                                <div class="flex justify-center h-full">
+                                    <div class="my-auto font-titleSemiBold text-base text-white drop-shadow-sm">Services
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="relative h-full">
+                            <img src="https://images.pexels.com/photos/1753137/pexels-photo-1753137.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                                alt="" class="object-cover aspect-video h-full w-full">
+                            <div class="absolute top-0 bg-black/25 w-full h-full">
+                                <div class="flex justify-center h-full">
+                                    <div class="my-auto font-titleSemiBold text-base text-white drop-shadow-sm">Services
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="relative h-full">
+                            <img src="https://images.pexels.com/photos/533769/pexels-photo-533769.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                                alt="" class="object-cover aspect-video h-full w-full">
+                            <div class="absolute top-0 bg-black/25 w-full h-full">
+                                <div class="flex justify-center h-full">
+                                    <div class="my-auto font-titleSemiBold text-base text-white drop-shadow-sm">Services
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <!-- end button services -->
+
+
+
+
+
+
+        </section>
+        <!-- ========== end main card Section ========== -->
+    </div>
+
+
+
+
+
+
+
+    <!-- ============================== Link local ============================== -->
+    <!-- cdn jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- cdn slick -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- slick banner -->
+    <script src="./js/banner.js"></script>
+    <!-- ============================== end Link local ============================== -->
+
+</body>
+
+</html>
