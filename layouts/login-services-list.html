@@ -34,7 +34,7 @@
                                 alt="" class="h-14 py-2 hidden md:block">
                             <!-- end logo for desktop -->
 
-                            <a href="index.html" class="my-auto md:hidden block">
+                            <a href="./login-index.html" class="my-auto md:hidden block">
                                 <i class="fa-regular bg-slate-100 py-2 px-3 rounded-full  fa-chevron-left my-auto"></i>
                             </a>
 
@@ -154,7 +154,7 @@
     <!-- ============================== -->
     <div class="absolute top-24 w-full">
         <!-- back icon for desktop -->
-        <a href="./index.html">
+        <a href="./login-index.html">
             <div class="cs-container pb-4 hidden md:flex md:space-x-3">
                 <i
                     class="fa-solid fa-chevron-left py-2 px-3 rounded-full bg-primary/10 text-cs-black hover:bg-primary hover:text-cs-black transition-all"></i>
@@ -163,300 +163,107 @@
         </a>
         <!-- end back icon for desktop -->
 
-        <div class="cs-container">
-            <!-- img property -->
-            <section class=" text-neutral-700">
 
-                <!-- ========== img for mobile only ========== -->
-                <div class="relative ">
-                    <img alt="gallery"
-                        class="block w-full h-full md:hidden aspect-video rounded-lg object-cover object-center"
-                        src="https://images.pexels.com/photos/2854553/pexels-photo-2854553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-                    <!-- button gallery for mobile -->
-                    <div class="absolute bottom-2 right-2 md:hidden">
-                        <a href="#">
-                            <div
-                                class="flex space-x-3 bg-white rounded-md py-2 px-3 hover:drop-shadow-lg hover:touch-auto">
-                                <i class="fa-duotone fa-image my-auto"></i>
-                                <h1 class="font-titleSemiBold my-auto text-xs text-cs-black">
-                                    View
-                                    Gallery</h1>
-                            </div>
-                        </a>
+        <!-- ========== title Section ========== -->
+        <div class="py-4 cs-container">
+            <h1 class="uppercase font-titleSemiBold md:text-center md:text-3xl text-2xl text-cs-black tracking-tight">
+                Need order or request something?
+            </h1>
+            <h1 class="font-titleRegular text-cs-black text-base md:text-center tracking-tight">We're ready to help
+                you</h1>
+        </div>
+        <!-- ========== end title Section ========== -->
+
+
+        <!-- ========== Button Section ========== -->
+        <div class="cs-container lg:flex lg:justify-center cs-py-section">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:max-w-2xl gap-3 w-full">
+
+                <!-- Food and Beverage -->
+                <a href="#">
+                    <div
+                        class="border p-4 space-y-2 rounded-lg hover:scale-105 transition-all hover:border-none hover:drop-shadow-md bg-white h-full">
+                        <i class="fa-regular fa-utensils  py-3 px-3.5 bg-orange-500 text-white rounded-full"></i>
+                        <h1 class="font-titleRegular text-sm text-cs-black line-clamp-2">Food and Beverage </h1>
                     </div>
-                    <!-- button gallery for mobile -->
-                </div>
-                <!-- ========== end img for mobile only ========== -->
+                </a>
+                <!-- end Food and Beverage -->
 
-                <!-- ========== img for desktop only ========== -->
-                <div>
-                    <div class=" md:grid md:grid-cols-4 gap-3 hidden">
-
-                        <!-- grid 1 -->
-                        <div class="md:col-span-2 space-y-3">
-                            <!-- top img -->
-                            <div class="w-full">
-                                <img alt="gallery"
-                                    class="block w-full h-[9.375rem] rounded-tl-lg object-cover object-center"
-                                    src="https://images.pexels.com/photos/2854553/pexels-photo-2854553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-                            </div>
-                            <!-- end top img -->
-                            <!-- bottom img -->
-                            <div class="flex space-x-3">
-                                <div class="w-full">
-                                    <img alt="gallery"
-                                        class="block md:h-[9rem] lg:h-[186px] rounded-bl-lg object-cover object-center w-full"
-                                        src="https://images.pexels.com/photos/3144580/pexels-photo-3144580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-                                </div>
-                                <div class="w-full">
-                                    <img alt="gallery"
-                                        class="block md:h-[9rem] lg:h-[186px] object-cover object-center w-full"
-                                        src="https://images.pexels.com/photos/279805/pexels-photo-279805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-                                </div>
-                            </div>
-                            <!-- end bottom img -->
-                        </div>
-                        <!-- end grid 1 -->
-
-                        <!-- grid 2 -->
-                        <div class="md:col-span-1">
-                            <!-- top img -->
-                            <div class="w-full">
-                                <img alt="gallery"
-                                    class="block  lg:h-[21.75rem] md:h-[19.125rem] object-cover object-center w-full"
-                                    src="https://images.pexels.com/photos/15195270/pexels-photo-15195270.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-                            </div>
-                            <!-- end top img -->
-                        </div>
-                        <!-- end grid 2 -->
-
-                        <!-- grid 3 + button view gallery -->
-                        <div class="md:col-span-1">
-                            <!-- bottom img -->
-                            <div class="space-y-3">
-                                <div class="w-full">
-                                    <img alt="gallery"
-                                        class="block w-full lg:h-[10.5rem] md:h-[9.188rem] rounded-tr-lg object-cover object-center"
-                                        src="https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-                                </div>
-                                <div class="w-full relative">
-                                    <img alt="gallery"
-                                        class="block w-full lg:h-[10.5rem] md:h-[9.188rem] rounded-br-lg object-cover object-center"
-                                        src="https://images.pexels.com/photos/14022374/pexels-photo-14022374.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-
-                                    <!-- button gallery for desktop -->
-                                    <div class="absolute hidden md:block bottom-3 right-3">
-                                        <a href="#">
-                                            <div
-                                                class="flex space-x-3 bg-white rounded-md py-2 px-3 hover:drop-shadow-lg hover:touch-auto">
-                                                <i class="fa-duotone fa-image my-auto"></i>
-                                                <h1 class="font-titleSemiBold my-auto text-xs text-cs-black">
-                                                    View Gallery</h1>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end bottom img -->
-                        </div>
-                        <!-- end grid 3 -->
-
+                <!-- Extra Amenities -->
+                <a href="#">
+                    <div
+                        class="border p-4 space-y-2 rounded-lg hover:scale-105 transition-all hover:border-none hover:drop-shadow-md bg-white h-full">
+                        <i class="fa-regular fa-toothbrush  py-3 px-3 bg-cyan-500 text-white rounded-full"></i>
+                        <h1 class="font-titleRegular text-sm text-cs-black line-clamp-2">Extra Amenities</h1>
                     </div>
-                    <!-- ========== end img for desktop only ========== -->
+                </a>
+                <!-- end Extra Amenities -->
 
-                </div>
-            </section>
-            <!-- end img property -->
-
-            <!-- Title property -->
-            <section class="md:py-4 py-3 md:grid md:grid-cols-3 border-b">
-                <!-- grid 1 (on desktop) -->
-                <div class="flex md:space-x-3 justify-between col-span-2 md:justify-normal">
-                    <div class="leading-tight">
-                        <h1 class="font-titleSemiBold tracking-tight text-xl md:text-3xl line-clamp-2">IZY Hotel,
-                            Jakarta
-                        </h1>
-                        <h1 class="font-titleLight tracking-tight text-xs md:text-sm text-cs-gray">Jl. Kartika Plaza
-                            No.9x, Kuta, Kec. Kuta, Kabupaten Badung, Bali 80361
-                        </h1>
+                <!-- Make up room -->
+                <a href="#">
+                    <div
+                        class="border p-4 space-y-2 rounded-lg hover:scale-105 transition-all hover:border-none hover:drop-shadow-md bg-white h-full">
+                        <i class="fa-regular fa-bed-front  py-3 px-3 bg-blue-500 text-white rounded-full"></i>
+                        <h1 class="font-titleRegular text-sm text-cs-black line-clamp-2">Make up room</h1>
                     </div>
-                </div>
-                <!-- end grid 1 (on desktop) -->
+                </a>
+                <!-- end Make up room -->
 
-                <!-- grid 2 (on desktop) -->
-                <div class="col-span-1 hidden md:flex md:justify-end md:space-x-3 md:my-auto">
-                    <!-- Chat (desktop) -->
-                    <a href="#">
-                        <div
-                            class="hidden md:flex rounded-full bg-white border relative border-primary space-x-2 py-2 px-3 text-cs-black my-auto">
-                            <i class="fa-regular fa-file-signature  my-auto">
-                            </i>
-                            <h1 class="my-auto font-titleSemiBold text-xs">Book Now!</h1>
-                        </div>
-                    </a>
-                    <!-- Booking (desktop) -->
-                    <a href="#">
-                        <div class="hidden md:flex my-auto">
-                            <i
-                                class="fa-regular fa-location-dot py-2 px-2.5 rounded-full bg-primary/10 text-cs-black hover:bg-primary hover:text-cs-black transition-all">
-                            </i>
-                        </div>
-                    </a>
-                    <!-- location (desktop) -->
-                    <a href="#">
-                        <div class="hidden md:flex my-auto">
-                            <i
-                                class="fa-regular fa-message py-2 px-2 rounded-full bg-primary/10 text-cs-black hover:bg-primary hover:text-cs-black transition-all">
-                            </i>
-                        </div>
-                    </a>
-                </div>
-                <!-- end grid 2 (on desktop) -->
-            </section>
-            <!-- end Title property -->
-
-            <!-- Grid main information -->
-            <div class="relative">
-                <div class="md:grid-cols-4 md:grid lg:grid relative lg:grid-cols-5 md:gap-6">
-                    <!-- grid 1 -->
-                    <div class="md:col-span-3 lg:col-span-4 ">
-                        <!-- about us -->
-                        <section class="rounded cs-py-section border-b space-y-2">
-                            <h1 class="font-titleSemiBold md:text-xl text-base text-cs-black">About Us</h1>
-                            <h1 class="font-bodyRegular text-sm text-cs-gray leading-relaxed">
-                                The car parking and the Wi-Fi are always free, so you can stay in touch and come and go
-                                as
-                                you
-                                please. Conveniently situated in the Kuta part of Bali, this property puts you close to
-                                attractions
-                                and interesting dining options. Be sure to set some time aside to visit Sacred Monkey
-                                Forest
-                                Sanctuary as well as Kuta Beach nearby. Rated with 3 stars, this high-quality property
-                                provides
-                                guests with access to massage, spa and outdoor pool on-site.
-                            </h1>
-                        </section>
-                        <!-- end about us -->
-
-                        <!-- Our rooms -->
-                        <section class="cs-py-section space-y-3 border-b">
-                            <h1 class="font-titleSemiBold md:text-xl text-base text-cs-black">Our Rooms</h1>
-                            <div class="overflow-x-scroll flex gap-3">
-                                <!-- card 1 -->
-                                <a href="#" class="flex-none">
-                                    <div class="space-y-1">
-                                        <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                            alt="" class="aspect-video object-cover h-28 md:h-48 rounded-md">
-                                        <h1 class="font-titleRegular text-cs-black text-sm md:text-base">Super Deluxe
-                                        </h1>
-                                    </div>
-                                </a>
-                                <!-- end card 1 -->
-
-                                <!-- card 2 -->
-                                <a href="#" class="flex-none">
-                                    <div class="space-y-1">
-                                        <img src="https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                            alt="" class="aspect-video object-cover h-28 md:h-48 rounded-md">
-                                        <h1 class="font-titleRegular text-cs-black text-sm md:text-base">Double Deluxe
-                                        </h1>
-                                    </div>
-                                </a>
-                                <!-- end card 2 -->
-
-                                <!-- card 3 -->
-                                <a href="#" class="flex-none">
-                                    <div class="space-y-1">
-                                        <img src="https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?auto=compress&cs=tinysrgb&w=600"
-                                            alt="" class="aspect-video object-cover h-28 md:h-48 rounded-md">
-                                        <h1 class="font-titleRegular text-cs-black text-sm md:text-base">Twin Deluxe
-                                        </h1>
-                                    </div>
-                                </a>
-                                <!-- end card 3 -->
-                            </div>
-                        </section>
-                        <!-- end Our rooms -->
+                <!-- Laundry Services -->
+                <a href="#">
+                    <div
+                        class="border p-4 space-y-2 rounded-lg hover:scale-105 transition-all hover:border-none hover:drop-shadow-md bg-white h-full">
+                        <i class="fa-regular fa-washing-machine  py-3 px-3.5 bg-lime-600 text-white rounded-full"></i>
+                        <h1 class="font-titleRegular text-sm text-cs-black line-clamp-2">Laundry Services</h1>
                     </div>
-                    <!-- end grid 1 -->
+                </a>
+                <!-- end Laundry Services -->
 
-                    <!-- grid 2 (only view on desktop) -->
-                    <div class="md:col-span-1 lg:col-span-1 hidden md:block relative pt-10 w-full"
-                        x-data="{ open: false }">
-                        <div class="sticky top-40">
-                            <a href="./checkInNow.html"
-                                class=" bg-primary hover:bg-primary-hover flex justify-between py-2 px-3 rounded-md transition-colors">
-                                <div>
-                                    <h1 class="  text-white font-titleSemiBold my-auto text-base  w-auto text-center">
-                                        I'm a Guest</h1>
-                                    <h1 class="  text-white font-titleLight my-auto text-xs  w-auto text-center">
-                                        Check in now</h1>
-                                </div>
-                                <i class="fa-regular fa-chevron-right my-auto text-white"></i>
-                            </a>
-                        </div>
+                <!-- Wake up call -->
+                <a href="#">
+                    <div
+                        class="border p-4 space-y-2 rounded-lg hover:scale-105 transition-all hover:border-none hover:drop-shadow-md bg-white h-full">
+                        <i class="fa-regular fa-alarm-clock  py-3 px-3 bg-emerald-600 text-white rounded-full"></i>
+                        <h1 class="font-titleRegular text-sm text-cs-black line-clamp-2">Wake up call</h1>
                     </div>
-                    <!-- end grid 2 -->
-                </div>
+                </a>
+                <!-- end Wake up call -->
+
+                <!-- Spa & Healing -->
+                <a href="#">
+                    <div
+                        class="border p-4 space-y-2 rounded-lg hover:scale-105 transition-all hover:border-none hover:drop-shadow-md bg-white h-full">
+                        <i class="fa-regular fa-spa  py-3 px-3 bg-pink-500 text-white rounded-full"></i>
+                        <h1 class="font-titleRegular text-sm text-cs-black line-clamp-2">Spa & Healing</h1>
+                    </div>
+                </a>
+                <!-- end Spa & Healing -->
+
+                <!-- Check out assistance -->
+                <a href="#">
+                    <div
+                        class="border p-4 space-y-2 rounded-lg hover:scale-105 transition-all hover:border-none hover:drop-shadow-md bg-white h-full">
+                        <i
+                            class="fa-regular fa-suitcase-rolling  py-3 px-3.5 bg-purple-500 text-white rounded-full"></i>
+                        <h1 class="font-titleRegular text-sm text-cs-black line-clamp-2">Check out assistance</h1>
+                    </div>
+                </a>
+                <!-- end Check out assistance -->
+
+                <!-- Engginering Assistance -->
+                <a href="#">
+                    <div
+                        class="border p-4 space-y-2 rounded-lg hover:scale-105 transition-all hover:border-none hover:drop-shadow-md bg-white h-full">
+                        <i class="fa-regular fa-triangle-exclamation  py-3 px-3 bg-red-500 text-white rounded-full"></i>
+                        <h1 class="font-titleRegular text-sm text-cs-black line-clamp-2">Engginering Assistance</h1>
+                    </div>
+                </a>
+                <!-- end Engginering Assistance -->
+
             </div>
-            <!-- end Grid main information -->
-
-            <!-- Place of Interest -->
-            <section class="cs-py-section space-y-3 border-b">
-                <h1 class="font-titleSemiBold md:text-xl text-base text-cs-black">Place of Interest</h1>
-                <div class="overflow-x-scroll flex gap-3">
-                    <!-- card 1 -->
-                    <a href="#" class="flex-none">
-                        <div class="space-y-1">
-                            <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="" class="aspect-video object-cover h-28 md:h-48 rounded-md">
-                            <h1 class="font-titleRegular text-cs-black text-sm md:text-base">Super Deluxe
-                            </h1>
-                        </div>
-                    </a>
-                    <!-- end card 1 -->
-
-                    <!-- card 2 -->
-                    <a href="#" class="flex-none">
-                        <div class="space-y-1">
-                            <img src="https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                alt="" class="aspect-video object-cover h-28 md:h-48 rounded-md">
-                            <h1 class="font-titleRegular text-cs-black text-sm md:text-base">Double Deluxe
-                            </h1>
-                        </div>
-                    </a>
-                    <!-- end card 2 -->
-
-                    <!-- card 3 -->
-                    <a href="#" class="flex-none">
-                        <div class="space-y-1">
-                            <img src="https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?auto=compress&cs=tinysrgb&w=600"
-                                alt="" class="aspect-video object-cover h-28 md:h-48 rounded-md">
-                            <h1 class="font-titleRegular text-cs-black text-sm md:text-base">Twin Deluxe
-                            </h1>
-                        </div>
-                    </a>
-                    <!-- end card 3 -->
-                </div>
-            </section>
-            <!-- end Place of Interest -->
         </div>
+        <!-- ========== end Button Section ========== -->
 
-        <!-- FAB im guest Section for mobile -->
-        <div class="md:hidden sticky bottom-0 bg-white/30 backdrop-blur-sm w-full p-4">
-            <a href="./checkInNow.html">
-                <div class="bg-primary p-2 rounded-md flex justify-between">
-                    <div>
-                        <h1 class="  text-white font-titleSemiBold my-auto text-base  w-auto text-center">
-                            I'm a Guest</h1>
-                        <h1 class="  text-white font-titleLight my-auto text-xs  w-auto text-center">
-                            Check in now</h1>
-                    </div>
-                    <i class="fa-regular fa-chevron-right my-auto text-white"></i>
-                </div>
-            </a>
-        </div>
-        <!-- end FAB im guest Section for mobile -->
 
     </div>
     <!-- ============================== -->
