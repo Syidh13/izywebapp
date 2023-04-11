@@ -34,8 +34,8 @@
     <!-- ========== end FAB Chat Section ========== -->
 
     <!-- ========== Header Section ========== -->
-    <section x-data="{ open: false }">
-        <div class="relative z-40">
+    <div x-data="{ open: false }">
+        <section class="relative z-40">
             <div class="h-20 w-full bg-cs-background border-b fixed">
                 <div class="cs-container flex">
                     <div class="my-auto w-full">
@@ -81,7 +81,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- modal for mobile -->
         <section class="absolute w-screen z-50 h-screen top-0 left-0 md:hidden" x-show="open">
             <!-- modul header -->
@@ -154,273 +154,274 @@
             <!-- end modal for mobile -->
         </section>
         <!-- end modal for mobile -->
-        <!-- ========== End Header Section ========== -->
+    </div>
+    <!-- ========== End Header Section ========== -->
 
-        <!-- ========== absolute book room Section ========== -->
-        <section class=" absolute top-[28.125rem] w-full z-10">
-            <div class=" cs-container w-full">
-                <div class="px-4 lg:px-0 lg:max-w-xl">
-                    <!-- grid -->
-                    <div class="grid grid-cols-2 gap-4">
-                        <a href="./seeMoreProperty.html"
-                            class="col-span-1 flex md:space-x-3 space-x-2 bg-white/90 p-4 hover:border hover:border-primary drop-shadow-md backdrop-blur-sm hover:backdrop-blur-md hover:bg-white transition-all rounded-md">
-                            <i class="fa-duotone fa-door-open my-auto"></i>
-                            <h1 class="font-titleSemiBold text-cs-black text-sm w-full">Booking Now</h1>
-                        </a>
-                        <a href="#"
-                            class="col-span-1 flex md:space-x-3 space-x-2 bg-white/90 p-4 hover:border hover:border-primary drop-shadow-md backdrop-blur-sm hover:backdrop-blur-md hover:bg-white transition-all rounded-md">
-                            <i class="fa-duotone fa-hotel my-auto"></i>
-                            <h1 class="font-titleSemiBold text-cs-black text-sm w-full">Pre Check-In</h1>
-                        </a>
-                    </div>
-                    <!-- end grid -->
+    <!-- ========== absolute book room Section ========== -->
+    <section class=" absolute top-[28.125rem] w-full z-10">
+        <div class=" cs-container w-full">
+            <div class="px-4 lg:px-0 lg:max-w-xl">
+                <!-- grid -->
+                <div class="grid grid-cols-2 gap-4">
+                    <a href="./seeMoreProperty.html"
+                        class="col-span-1 flex md:space-x-3 space-x-2 bg-white/90 p-4 hover:border hover:border-primary drop-shadow-md backdrop-blur-sm hover:backdrop-blur-md hover:bg-white transition-all rounded-md">
+                        <i class="fa-duotone fa-door-open my-auto"></i>
+                        <h1 class="font-titleSemiBold text-cs-black text-sm w-full">Booking Now</h1>
+                    </a>
+                    <a href="#"
+                        class="col-span-1 flex md:space-x-3 space-x-2 bg-white/90 p-4 hover:border hover:border-primary drop-shadow-md backdrop-blur-sm hover:backdrop-blur-md hover:bg-white transition-all rounded-md">
+                        <i class="fa-duotone fa-hotel my-auto"></i>
+                        <h1 class="font-titleSemiBold text-cs-black text-sm w-full">Pre Check-In</h1>
+                    </a>
+                </div>
+                <!-- end grid -->
+            </div>
+        </div>
+    </section>
+    <!-- ========== end absolute book room Section ========== -->
+
+    <div class="absolute top-24 w-full">
+        <!-- ========== hero Section ========== -->
+        <section class="relative">
+            <div class="multiple-items px-4">
+                <div class="">
+                    <img src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="h-96 w-screen object-cover rounded-lg">
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="" class="h-96 w-screen object-cover rounded-lg">
                 </div>
             </div>
-        </section>
-        <!-- ========== end absolute book room Section ========== -->
-
-        <div class="absolute top-24 w-full">
-            <!-- ========== hero Section ========== -->
-            <section class="relative">
-                <div class="multiple-items px-4">
-                    <div class="">
-                        <img src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="" class="h-96 w-screen object-cover rounded-lg">
-                    </div>
-                    <div>
-                        <img src="https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="" class="h-96 w-screen object-cover rounded-lg">
-                    </div>
-                </div>
-                <!-- absolute -->
-                <div class="absolute  w-full h-96 top-0 px-4">
-                    <div class="bg-black/60 rounded-lg h-full">
-                        <div class="cs-container">
-                            <div class="md:grid md:grid-cols-2 h-full">
-                                <div class="col-span-1 flex h-full">
-                                    <di class="my-auto space-y-2">
-                                        <h1
-                                            class="font-titleSemiBold text-white text-3xl md:text-4xl my-auto text-center md:text-left">
-                                            Experience luxury at your fingertips with our
-                                            hotel app
-                                        </h1>
-                                        <h2 class="font-titleLight text-white text-center md:text-left">your personal
-                                            gateway to
-                                            seamless travel.</h2>
-                                    </di>
-                                </div>
+            <!-- absolute -->
+            <div class="absolute  w-full h-96 top-0 px-4">
+                <div class="bg-black/60 rounded-lg h-full">
+                    <div class="cs-container">
+                        <div class="md:grid md:grid-cols-2 h-full">
+                            <div class="col-span-1 flex h-full">
+                                <di class="my-auto space-y-2">
+                                    <h1
+                                        class="font-titleSemiBold text-white text-3xl md:text-4xl my-auto text-center md:text-left">
+                                        Experience luxury at your fingertips with our
+                                        hotel app
+                                    </h1>
+                                    <h2 class="font-titleLight text-white text-center md:text-left">your personal
+                                        gateway to
+                                        seamless travel.</h2>
+                                </di>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- end absolute -->
-            </section>
-            <!-- ========== end hero Section ========== -->
+            </div>
+            <!-- end absolute -->
+        </section>
+        <!-- ========== end hero Section ========== -->
 
-            <!-- ========== main card Section ========== -->
-            <section class="relative cs-container cs-py-section pt-12 space-y-4">
-                <div class="md:flex justify-between">
-                    <div>
-                        <h1 class="font-titleSemiBold text-2xl">Explore Property</h1>
-                        <h2 class="font-bodyLight text-cs-body text-sm">Explore fascinating properties to start your
-                            journey
-                        </h2>
-                    </div>
-                    <div class="hidden md:flex my-auto">
-                        <a href="./seeMoreProperty.html"
-                            class="border border-primary py-2 px-4 rounded text-primary hover:text-white hover:border-white hover:bg-primary transition-all">
-                            <h1 class="font-titleRegular text-sm">See More</h1>
-                        </a>
-                    </div>
+        <!-- ========== main card Section ========== -->
+        <section class="relative cs-container cs-py-section pt-12 space-y-4">
+            <div class="md:flex justify-between">
+                <div>
+                    <h1 class="font-titleSemiBold text-2xl">Explore Property</h1>
+                    <h2 class="font-bodyLight text-cs-body text-sm">Explore fascinating properties to start your
+                        journey
+                    </h2>
                 </div>
-                <!-- card section -->
-                <div class="pt-4 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 md:gap-6">
-                    <!-- card 1 -->
-                    <a href="./property-detail.html" class="col-span-1 md:space-y-3 space-y-2">
-                        <img src="https://images.pexels.com/photos/2854553/pexels-photo-2854553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="" class="aspect-square w-full object-cover rounded-lg">
-                        <!-- property name -->
-                        <div>
-                            <h1 class="truncate font-titleSemiBold text-base text-cs-black">IZY Hotel</h1>
-                            <h1 class="truncate font-body text-xs text-cs-body">Jakarta, Indonesia</h1>
-                        </div>
-                    </a>
-                    <!-- end card 1 -->
-
-                    <!-- card 2 -->
-                    <a href="#" class="col-span-1 md:space-y-3 space-y-2">
-                        <img src="https://images.pexels.com/photos/14022373/pexels-photo-14022373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="" class="aspect-square w-full object-cover rounded-lg">
-                        <!-- property name -->
-                        <div>
-                            <h1 class="truncate font-titleSemiBold text-base text-cs-black">Bliss Surfer</h1>
-                            <h1 class="truncate font-body text-xs text-cs-body">Bali, Indonesia</h1>
-                        </div>
-                    </a>
-                    <!-- end card 2 -->
-
-                    <!-- card 3 -->
-                    <a href="#" class="col-span-1 md:space-y-3 space-y-2">
-                        <img src="https://images.pexels.com/photos/2290738/pexels-photo-2290738.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="" class="aspect-square w-full object-cover rounded-lg">
-                        <!-- property name -->
-                        <div>
-                            <h1 class="truncate font-titleSemiBold text-base text-cs-black">Armor Bali</h1>
-                            <h1 class="truncate font-body text-xs text-cs-body">Bali, Indonesia</h1>
-                        </div>
-                    </a>
-                    <!-- end card 3 -->
-
-                    <!-- card 4 -->
-                    <a href="#" class="col-span-1 md:space-y-3 space-y-2">
-                        <img src="https://images.pexels.com/photos/2854553/pexels-photo-2854553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="" class="aspect-square w-full object-cover rounded-lg">
-                        <!-- property name -->
-                        <div>
-                            <h1 class="truncate font-titleSemiBold text-base text-cs-black">Diwangkara Hotel & Resort
-                            </h1>
-                            <h1 class="truncate font-body text-xs text-cs-body">Bali, Indonesia</h1>
-                        </div>
-                    </a>
-                    <!-- end card 4 -->
-
-                    <!-- card 5 -->
-                    <a href="#" class="col-span-1 md:space-y-3 space-y-2">
-                        <img src="https://images.pexels.com/photos/14012238/pexels-photo-14012238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="" class="aspect-square w-full object-cover rounded-lg">
-                        <!-- property name -->
-                        <div>
-                            <h1 class="truncate font-titleSemiBold text-base text-cs-black">Jimbaran Bay Beach Resort &
-                                Spa
-                            </h1>
-                            <h1 class="truncate font-body text-xs text-cs-body">Bali, Indonesia</h1>
-                        </div>
-                    </a>
-                    <!-- end card 5 -->
-
-                    <!-- card 6 -->
-                    <a href="#" class="col-span-1 md:space-y-3 space-y-2">
-                        <img src="https://images.pexels.com/photos/274249/pexels-photo-274249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="" class="aspect-square w-full object-cover rounded-lg">
-                        <!-- property name -->
-                        <div>
-                            <h1 class="truncate font-titleSemiBold text-base text-cs-black">Liberty Hotel Thamrin</h1>
-                            <h1 class="truncate font-body text-xs text-cs-body">Jakarta Pusat, Indonesia</h1>
-                        </div>
-                    </a>
-                    <!-- end card 6 -->
-
-                    <!-- card 7 -->
-                    <a href="#" class="col-span-1 md:space-y-3 space-y-2">
-                        <img src="https://images.pexels.com/photos/5615795/pexels-photo-5615795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="" class="aspect-square w-full object-cover rounded-lg">
-                        <!-- property name -->
-                        <div>
-                            <h1 class="truncate font-titleSemiBold text-base text-cs-black">Dwaraka The Royal Villas -
-                                Ubud
-                            </h1>
-                            <h1 class="truncate font-body text-xs text-cs-body">Bali, Indonesia</h1>
-                        </div>
-                    </a>
-                    <!-- end card 7 -->
-
-                    <!-- card 8 -->
-                    <a href="#" class="col-span-1 md:space-y-3 space-y-2">
-                        <img src="https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="" class="aspect-square w-full object-cover rounded-lg">
-                        <!-- property name -->
-                        <div>
-                            <h1 class="truncate font-titleSemiBold text-base text-cs-black">AllStay Ecotel Yogyakarta
-                            </h1>
-                            <h1 class="truncate font-body text-xs text-cs-body">Yogyakarta, Indonesia</h1>
-                        </div>
-                    </a>
-                    <!-- end card 8 -->
-
-                    <!-- card 9 -->
-                    <a href="#" class="col-span-1 md:space-y-3 space-y-2">
-                        <img src="https://images.pexels.com/photos/261411/pexels-photo-261411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="" class="aspect-square w-full object-cover rounded-lg">
-                        <!-- property name -->
-                        <div>
-                            <h1 class="truncate font-titleSemiBold text-base text-cs-black">Dwaraka The Royal Villas -
-                                Ubud
-                            </h1>
-                            <h1 class="truncate font-body text-xs text-cs-body">Bali, Indonesia</h1>
-                        </div>
-                    </a>
-                    <!-- end card 9 -->
-
-                    <!-- card 10 -->
-                    <a href="#" class="col-span-1 md:space-y-3 space-y-2">
-                        <img src="https://images.pexels.com/photos/2506988/pexels-photo-2506988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="" class="aspect-square w-full object-cover rounded-lg">
-                        <!-- property name -->
-                        <div>
-                            <h1 class="truncate font-titleSemiBold text-base text-cs-black">AllStay Ecotel Yogyakarta
-                            </h1>
-                            <h1 class="truncate font-body text-xs text-cs-body">Yogyakarta, Indonesia</h1>
-                        </div>
-                    </a>
-                    <!-- end card 10 -->
-
-                    <!-- card 11 (desktop) -->
-                    <a href="#" class="col-span-1 md:space-y-3 space-y-2 hidden md:block">
-                        <img src="https://images.pexels.com/photos/764830/pexels-photo-764830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="" class="aspect-square w-full object-cover rounded-lg">
-                        <!-- property name -->
-                        <div>
-                            <h1 class="truncate font-titleSemiBold text-base text-cs-black">AllStay Ecotel Yogyakarta
-                            </h1>
-                            <h1 class="truncate font-body text-xs text-cs-body">Yogyakarta, Indonesia</h1>
-                        </div>
-                    </a>
-                    <!-- end card 11 (desktop) -->
-
-                    <!-- card 12 (desktop) -->
-                    <a href="#" class="col-span-1 md:space-y-3 space-y-2 hidden md:block">
-                        <img src="https://images.pexels.com/photos/1458457/pexels-photo-1458457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                            alt="" class="aspect-square w-full object-cover rounded-lg">
-                        <!-- property name -->
-                        <div>
-                            <h1 class="truncate font-titleSemiBold text-base text-cs-black">AllStay Ecotel Yogyakarta
-                            </h1>
-                            <h1 class="truncate font-body text-xs text-cs-body">Yogyakarta, Indonesia</h1>
-                        </div>
-                    </a>
-                    <!-- end card 12 (desktop) -->
-
-                </div>
-                <!-- end card section -->
-
-                <!-- see more button -->
-                <div class="flex justify-center py-6">
-                    <a href="seeMoreProperty.html"
+                <div class="hidden md:flex my-auto">
+                    <a href="./seeMoreProperty.html"
                         class="border border-primary py-2 px-4 rounded text-primary hover:text-white hover:border-white hover:bg-primary transition-all">
-                        <h1 class="font-titleRegular text-sm">See more our property</h1>
+                        <h1 class="font-titleRegular text-sm">See More</h1>
                     </a>
                 </div>
-                <!-- end see more button -->
+            </div>
+            <!-- card section -->
+            <div class="pt-4 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 md:gap-6">
+                <!-- card 1 -->
+                <a href="./property-detail.html" class="col-span-1 md:space-y-3 space-y-2">
+                    <img src="https://images.pexels.com/photos/2854553/pexels-photo-2854553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="aspect-square w-full object-cover rounded-lg">
+                    <!-- property name -->
+                    <div>
+                        <h1 class="truncate font-titleSemiBold text-base text-cs-black">IZY Hotel</h1>
+                        <h1 class="truncate font-body text-xs text-cs-body">Jakarta, Indonesia</h1>
+                    </div>
+                </a>
+                <!-- end card 1 -->
 
-            </section>
-            <!-- ========== end main card Section ========== -->
-        </div>
+                <!-- card 2 -->
+                <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                    <img src="https://images.pexels.com/photos/14022373/pexels-photo-14022373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="aspect-square w-full object-cover rounded-lg">
+                    <!-- property name -->
+                    <div>
+                        <h1 class="truncate font-titleSemiBold text-base text-cs-black">Bliss Surfer</h1>
+                        <h1 class="truncate font-body text-xs text-cs-body">Bali, Indonesia</h1>
+                    </div>
+                </a>
+                <!-- end card 2 -->
+
+                <!-- card 3 -->
+                <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                    <img src="https://images.pexels.com/photos/2290738/pexels-photo-2290738.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="aspect-square w-full object-cover rounded-lg">
+                    <!-- property name -->
+                    <div>
+                        <h1 class="truncate font-titleSemiBold text-base text-cs-black">Armor Bali</h1>
+                        <h1 class="truncate font-body text-xs text-cs-body">Bali, Indonesia</h1>
+                    </div>
+                </a>
+                <!-- end card 3 -->
+
+                <!-- card 4 -->
+                <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                    <img src="https://images.pexels.com/photos/2854553/pexels-photo-2854553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="aspect-square w-full object-cover rounded-lg">
+                    <!-- property name -->
+                    <div>
+                        <h1 class="truncate font-titleSemiBold text-base text-cs-black">Diwangkara Hotel & Resort
+                        </h1>
+                        <h1 class="truncate font-body text-xs text-cs-body">Bali, Indonesia</h1>
+                    </div>
+                </a>
+                <!-- end card 4 -->
+
+                <!-- card 5 -->
+                <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                    <img src="https://images.pexels.com/photos/14012238/pexels-photo-14012238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="aspect-square w-full object-cover rounded-lg">
+                    <!-- property name -->
+                    <div>
+                        <h1 class="truncate font-titleSemiBold text-base text-cs-black">Jimbaran Bay Beach Resort &
+                            Spa
+                        </h1>
+                        <h1 class="truncate font-body text-xs text-cs-body">Bali, Indonesia</h1>
+                    </div>
+                </a>
+                <!-- end card 5 -->
+
+                <!-- card 6 -->
+                <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                    <img src="https://images.pexels.com/photos/274249/pexels-photo-274249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="aspect-square w-full object-cover rounded-lg">
+                    <!-- property name -->
+                    <div>
+                        <h1 class="truncate font-titleSemiBold text-base text-cs-black">Liberty Hotel Thamrin</h1>
+                        <h1 class="truncate font-body text-xs text-cs-body">Jakarta Pusat, Indonesia</h1>
+                    </div>
+                </a>
+                <!-- end card 6 -->
+
+                <!-- card 7 -->
+                <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                    <img src="https://images.pexels.com/photos/5615795/pexels-photo-5615795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="aspect-square w-full object-cover rounded-lg">
+                    <!-- property name -->
+                    <div>
+                        <h1 class="truncate font-titleSemiBold text-base text-cs-black">Dwaraka The Royal Villas -
+                            Ubud
+                        </h1>
+                        <h1 class="truncate font-body text-xs text-cs-body">Bali, Indonesia</h1>
+                    </div>
+                </a>
+                <!-- end card 7 -->
+
+                <!-- card 8 -->
+                <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                    <img src="https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="aspect-square w-full object-cover rounded-lg">
+                    <!-- property name -->
+                    <div>
+                        <h1 class="truncate font-titleSemiBold text-base text-cs-black">AllStay Ecotel Yogyakarta
+                        </h1>
+                        <h1 class="truncate font-body text-xs text-cs-body">Yogyakarta, Indonesia</h1>
+                    </div>
+                </a>
+                <!-- end card 8 -->
+
+                <!-- card 9 -->
+                <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                    <img src="https://images.pexels.com/photos/261411/pexels-photo-261411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="aspect-square w-full object-cover rounded-lg">
+                    <!-- property name -->
+                    <div>
+                        <h1 class="truncate font-titleSemiBold text-base text-cs-black">Dwaraka The Royal Villas -
+                            Ubud
+                        </h1>
+                        <h1 class="truncate font-body text-xs text-cs-body">Bali, Indonesia</h1>
+                    </div>
+                </a>
+                <!-- end card 9 -->
+
+                <!-- card 10 -->
+                <a href="#" class="col-span-1 md:space-y-3 space-y-2">
+                    <img src="https://images.pexels.com/photos/2506988/pexels-photo-2506988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="aspect-square w-full object-cover rounded-lg">
+                    <!-- property name -->
+                    <div>
+                        <h1 class="truncate font-titleSemiBold text-base text-cs-black">AllStay Ecotel Yogyakarta
+                        </h1>
+                        <h1 class="truncate font-body text-xs text-cs-body">Yogyakarta, Indonesia</h1>
+                    </div>
+                </a>
+                <!-- end card 10 -->
+
+                <!-- card 11 (desktop) -->
+                <a href="#" class="col-span-1 md:space-y-3 space-y-2 hidden md:block">
+                    <img src="https://images.pexels.com/photos/764830/pexels-photo-764830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="aspect-square w-full object-cover rounded-lg">
+                    <!-- property name -->
+                    <div>
+                        <h1 class="truncate font-titleSemiBold text-base text-cs-black">AllStay Ecotel Yogyakarta
+                        </h1>
+                        <h1 class="truncate font-body text-xs text-cs-body">Yogyakarta, Indonesia</h1>
+                    </div>
+                </a>
+                <!-- end card 11 (desktop) -->
+
+                <!-- card 12 (desktop) -->
+                <a href="#" class="col-span-1 md:space-y-3 space-y-2 hidden md:block">
+                    <img src="https://images.pexels.com/photos/1458457/pexels-photo-1458457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="aspect-square w-full object-cover rounded-lg">
+                    <!-- property name -->
+                    <div>
+                        <h1 class="truncate font-titleSemiBold text-base text-cs-black">AllStay Ecotel Yogyakarta
+                        </h1>
+                        <h1 class="truncate font-body text-xs text-cs-body">Yogyakarta, Indonesia</h1>
+                    </div>
+                </a>
+                <!-- end card 12 (desktop) -->
+
+            </div>
+            <!-- end card section -->
+
+            <!-- see more button -->
+            <div class="flex justify-center py-6">
+                <a href="seeMoreProperty.html"
+                    class="border border-primary py-2 px-4 rounded text-primary hover:text-white hover:border-white hover:bg-primary transition-all">
+                    <h1 class="font-titleRegular text-sm">See more our property</h1>
+                </a>
+            </div>
+            <!-- end see more button -->
+
+        </section>
+        <!-- ========== end main card Section ========== -->
+    </div>
 
 
 
 
 
 
-        <!-- ============================== Link local ============================== -->
-        <!-- cdn jquery -->
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-            integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-        <!-- cdn slick -->
-        <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-        <!-- slick banner -->
-        <script src="./js/banner.js"></script>
-        <!-- ============================== end Link local ============================== -->
+    <!-- ============================== Link local ============================== -->
+    <!-- cdn jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- cdn slick -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- slick banner -->
+    <script src="./js/banner.js"></script>
+    <!-- ============================== end Link local ============================== -->
 
 </body>
 
