@@ -28,7 +28,7 @@
             <div class="cs-container flex">
                 <div class="my-auto w-full">
                     <div class="flex justify-between w-full">
-                        <a href="./login-services-foodBeverage.html" class="flex md:hidden space-x-3">
+                        <a href="./login-services-list.html" class="flex md:hidden space-x-3">
                             <i class="fa-regular fa-angle-left my-auto"></i>
                             <h1 class="my-auto font-titleSemiBold text-cs-black text-sm">Food & Beverage</h1>
                         </a>
@@ -81,7 +81,7 @@
         <!-- end back icon for desktop -->
 
         <!-- ========== Button Section ========== -->
-        <div class="cs-container pt-2 pb-8">
+        <div class="cs-container pt-2 md:pb-8 pb-20">
             <div class="md:grid md:grid-cols-4 gap-3">
 
                 <!-- grid category (for desktop) -->
@@ -132,140 +132,358 @@
                         <div class="lg:grid-cols-2 md:grid-cols-2  grid gap-4">
 
                             <!-- menu 1 -->
-                            <div class="flex w-full">
-                                <a href="#" class="w-full">
-                                    <div
-                                        class="border bg-white p-4 w-full rounded-md flex space-x-4 space-y-2 hover:drop-shadow-md transition-all">
-                                        <div class="w-full space-y-2">
-                                            <h1
-                                                class="text-base text-cs-black font-titleLight line-clamp-2 tracking-tight">
-                                                Hainam Bowls With Roasted Chicken</h1>
-                                            <h1
-                                                class="text-sm text-cs-gray font-titleRegular line-clamp-2 tracking-tight">
-                                                Nasi hainam wangi dengan Paha Ayam Panggang. Lengkap dengan sambal dan
-                                                kuah. Halal Ya</h1>
-                                            <h1 class="font-bodyMedium text-lg text-cs-black">40.000</h1>
-                                        </div>
-                                        <div class="w-24 flex-none space-y-3">
-                                            <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                                alt="" class="aspect-square rounded-md h-24 object-cover">
-                                            <button
-                                                class="border w-full text-center py-2 border-primary rounded-full font-titleSemiBold text-xs text-primary hover:bg-primary hover:text-white transition-all">Add</button>
+                            <div x-data="{ open: false }">
+                                <div class="flex w-full">
+                                    <div href="#" class="w-full">
+                                        <div
+                                            class="border bg-white p-4 w-full rounded-md relative hover:drop-shadow-md transition-all space-y-4">
+                                            <div class=" flex space-x-4 space-y-2 ">
+                                                <div class="w-full space-y-2">
+                                                    <h1
+                                                        class="text-base text-cs-black font-titleRegular line-clamp-2 md:line-clamp-1 tracking-tight">
+                                                        Hainam Bowls With Roasted Chicken</h1>
+                                                    <h1
+                                                        class="text-sm text-cs-gray font-titleRegular md:line-clamp-2 tracking-tight hidden">
+                                                        Nasi hainam wangi dengan Paha Ayam Panggang. Lengkap dengan
+                                                        sambal
+                                                        dan
+                                                        kuah. Halal Ya</h1>
+                                                    <h1 class="font-bodyMedium text-lg text-cs-black">40.000</h1>
+                                                </div>
+                                                <div class="w-24 flex-none space-y-3">
+                                                    <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                                        alt="" class="aspect-square rounded-md h-24 object-cover">
+                                                </div>
+                                            </div>
+                                            <!-- button add -->
+                                            <div x-data="{ note: false }">
+                                                <div class="relative">
+                                                    <button
+                                                        class="border  w-full text-center py-3 border-primary rounded-full font-titleSemiBold text-xs text-primary hover:bg-primary hover:text-white transition-all"
+                                                        @click="open = true">Add</button>
+                                                    <!-- change button to count -->
+                                                    <div class="absolute top-0 left-0 w-full grid grid-cols-3 bg-white border-white  py-3 px-4"
+                                                        x-show="open">
+                                                        <!-- note -->
+                                                        <div class="col-span-1 text-xs font-titleRegular"
+                                                            @click="note = true">
+                                                            <i
+                                                                class="fa-regular fa-pen-to-square border rounded-full  hover:border-primary hover:bg-slate-100 p-2"></i>
+                                                        </div>
+                                                        <!-- count button -->
+                                                        <div
+                                                            class="col-span-2 text-xs font-titleRegular flex justify-between">
+                                                            <!-- minus -->
+                                                            <button>
+                                                                <i class="fa-regular fa-minus p-2 border rounded-full  hover:border-primary hover:bg-slate-100"
+                                                                    @click="open = !open"></i>
+                                                            </button>
+                                                            <!-- count -->
+                                                            <h1 class="font-titleRegular text-sm text-cs-black my-auto">
+                                                                1
+                                                            </h1>
+                                                            <!-- add -->
+                                                            <button>
+                                                                <i
+                                                                    class="fa-regular fa-plus p-2 border rounded-full  hover:border-primary hover:bg-slate-100"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- modal note -->
+                                                <div class="absolute bg-white h-full w-full top-0 left-0 rounded-md p-4 space-y-4"
+                                                    x-show="note">
+                                                    <div class="flex  justify-center">
+                                                        <div class="w-full space-y-3">
+                                                            <h1 class="font-titleSemiBold text-base text-center">Add
+                                                                Note
+                                                            </h1>
+                                                            <input type="text" name="" id=""
+                                                                class="border rounded-md font-titleRegular text-sm p-2 w-full"
+                                                                placeholder="Add note">
+                                                        </div>
+                                                    </div>
+                                                    <!-- Button -->
+                                                    <div class="flex space-x-3">
+                                                        <button @click="note = !open"
+                                                            class="font-titleRegular text-xs py-2 w-full  rounded-full text-slate-400">Cancel</button>
+                                                        <button @click="note = !open"
+                                                            class="font-titleSemiBold text-xs hover:border-white hover:bg-primary transition-all hover:text-white py-2 w-full border border-primary rounded-full text-primary">Add</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </a>
+
+                                </div>
                             </div>
                             <!-- menu 1 -->
 
-                            <!-- menu add menu -->
-                            <div class="flex w-full">
-                                <a href="#" class="w-full">
-                                    <div
-                                        class="border bg-white p-4 w-full rounded-md flex space-x-4 space-y-2 hover:drop-shadow-md transition-all">
-                                        <div class="w-full space-y-2">
-                                            <h1
-                                                class="text-base text-cs-black font-titleLight line-clamp-2 tracking-tight">
-                                                Hainam Bowls With Roasted Chicken</h1>
-                                            <h1
-                                                class="text-sm text-cs-gray font-titleRegular line-clamp-2 tracking-tight">
-                                                Nasi hainam wangi dengan Paha Ayam Panggang. Lengkap dengan sambal dan
-                                                kuah. Halal Ya</h1>
-                                            <h1 class="font-bodyMedium text-lg text-cs-black">40.000</h1>
-                                        </div>
-
-                                        <div class="w-24 flex-none space-y-3">
-                                            <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                                alt="" class="aspect-square rounded-md h-24 object-cover">
-                                            <!-- after add button -->
-                                            <button
-                                                class="border text-center py-2 px-2.5 border-primary rounded-full font-titleSemiBold text-xs text-primary hover:bg-primary hover:text-white transition-all">
-                                                <i class="fa-regular fa-plus"></i>
-                                            </button>
-                                            <!-- after add button -->
-                                        </div>
-
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- menu add menu -->
-
                             <!-- menu 2 -->
-                            <div class="flex w-full">
-                                <a href="#" class="w-full">
-                                    <div
-                                        class="border bg-white p-4 w-full rounded-md flex space-x-4 space-y-2 hover:drop-shadow-md transition-all">
-                                        <div class="w-full space-y-2">
-                                            <h1
-                                                class="text-base text-cs-black font-titleLight line-clamp-2 tracking-tight">
-                                                Hainam Bowls With Roasted Chicken</h1>
-                                            <h1
-                                                class="text-sm text-cs-gray font-titleRegular line-clamp-2 tracking-tight">
-                                                Nasi hainam wangi dengan Paha Ayam Panggang. Lengkap dengan sambal dan
-                                                kuah. Halal Ya</h1>
-                                            <h1 class="font-bodyMedium text-lg text-cs-black">40.000</h1>
-                                        </div>
-                                        <div class="w-24 flex-none space-y-2">
-                                            <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                                alt="" class="aspect-square rounded-md h-24 object-cover">
-                                            <button
-                                                class="border w-full text-center py-1 border-primary rounded-md font-titleSemiBold text-xs text-primary hover:bg-primary hover:text-white transition-all">Add</button>
+                            <div x-data="{ open: false }">
+                                <div class="flex w-full">
+                                    <div href="#" class="w-full">
+                                        <div
+                                            class="border bg-white p-4 w-full rounded-md relative hover:drop-shadow-md transition-all space-y-4">
+                                            <div class=" flex space-x-4 space-y-2 ">
+                                                <div class="w-full space-y-2">
+                                                    <h1
+                                                        class="text-base text-cs-black font-titleRegular line-clamp-2 md:line-clamp-1 tracking-tight">
+                                                        Hainam Bowls With Roasted Chicken</h1>
+                                                    <h1
+                                                        class="text-sm text-cs-gray font-titleRegular md:line-clamp-2 tracking-tight hidden">
+                                                        Nasi hainam wangi dengan Paha Ayam Panggang. Lengkap dengan
+                                                        sambal
+                                                        dan
+                                                        kuah. Halal Ya</h1>
+                                                    <h1 class="font-bodyMedium text-lg text-cs-black">40.000</h1>
+                                                </div>
+                                                <div class="w-24 flex-none space-y-3">
+                                                    <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                                        alt="" class="aspect-square rounded-md h-24 object-cover">
+                                                </div>
+                                            </div>
+                                            <!-- button add -->
+                                            <div x-data="{ note: false }">
+                                                <div class="relative">
+                                                    <button
+                                                        class="border  w-full text-center py-3 border-primary rounded-full font-titleSemiBold text-xs text-primary hover:bg-primary hover:text-white transition-all"
+                                                        @click="open = true">Add</button>
+                                                    <!-- change button to count -->
+                                                    <div class="absolute top-0 left-0 w-full grid grid-cols-3 bg-white border-white  py-3 px-4"
+                                                        x-show="open">
+                                                        <!-- note -->
+                                                        <div class="col-span-1 text-xs font-titleRegular"
+                                                            @click="note = true">
+                                                            <i
+                                                                class="fa-regular fa-pen-to-square border rounded-full  hover:border-primary hover:bg-slate-100 p-2"></i>
+                                                        </div>
+                                                        <!-- count button -->
+                                                        <div
+                                                            class="col-span-2 text-xs font-titleRegular flex justify-between">
+                                                            <!-- minus -->
+                                                            <button>
+                                                                <i class="fa-regular fa-minus p-2 border rounded-full  hover:border-primary hover:bg-slate-100"
+                                                                    @click="open = !open"></i>
+                                                            </button>
+                                                            <!-- count -->
+                                                            <h1 class="font-titleRegular text-sm text-cs-black my-auto">
+                                                                1
+                                                            </h1>
+                                                            <!-- add -->
+                                                            <button>
+                                                                <i
+                                                                    class="fa-regular fa-plus p-2 border rounded-full  hover:border-primary hover:bg-slate-100"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- modal note -->
+                                                <div class="absolute bg-white h-full w-full top-0 left-0 rounded-md p-4 space-y-4"
+                                                    x-show="note">
+                                                    <div class="flex  justify-center">
+                                                        <div class="w-full space-y-3">
+                                                            <h1 class="font-titleSemiBold text-base text-center">Add
+                                                                Note
+                                                            </h1>
+                                                            <input type="text" name="" id=""
+                                                                class="border rounded-md font-titleRegular text-sm p-2 w-full"
+                                                                placeholder="Add note">
+                                                        </div>
+                                                    </div>
+                                                    <!-- Button -->
+                                                    <div class="flex space-x-3">
+                                                        <button @click="note = !open"
+                                                            class="font-titleRegular text-xs py-2 w-full  rounded-full text-slate-400">Cancel</button>
+                                                        <button @click="note = !open"
+                                                            class="font-titleSemiBold text-xs hover:border-white hover:bg-primary transition-all hover:text-white py-2 w-full border border-primary rounded-full text-primary">Add</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </a>
+
+                                </div>
                             </div>
                             <!-- menu 2 -->
 
                             <!-- menu 3 -->
-                            <div class="flex w-full">
-                                <a href="#" class="w-full">
-                                    <div
-                                        class="border bg-white p-4 w-full rounded-md flex space-x-4 space-y-2 hover:drop-shadow-md transition-all">
-                                        <div class="w-full space-y-2">
-                                            <h1
-                                                class="text-base text-cs-black font-titleLight line-clamp-2 tracking-tight">
-                                                Hainam Bowls With Roasted Chicken</h1>
-                                            <h1
-                                                class="text-sm text-cs-gray font-titleRegular line-clamp-2 tracking-tight">
-                                                Nasi hainam wangi dengan Paha Ayam Panggang. Lengkap dengan sambal dan
-                                                kuah. Halal Ya</h1>
-                                            <h1 class="font-bodyMedium text-lg text-cs-black">40.000</h1>
-                                        </div>
-                                        <div class="w-24 flex-none space-y-2">
-                                            <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                                alt="" class="aspect-square rounded-md h-24 object-cover">
-                                            <button
-                                                class="border w-full text-center py-1 border-primary rounded-md font-titleSemiBold text-xs text-primary hover:bg-primary hover:text-white transition-all">Add</button>
+                            <div x-data="{ open: false }">
+                                <div class="flex w-full">
+                                    <div href="#" class="w-full">
+                                        <div
+                                            class="border bg-white p-4 w-full rounded-md relative hover:drop-shadow-md transition-all space-y-4">
+                                            <div class=" flex space-x-4 space-y-2 ">
+                                                <div class="w-full space-y-2">
+                                                    <h1
+                                                        class="text-base text-cs-black font-titleRegular line-clamp-2 md:line-clamp-1 tracking-tight">
+                                                        Hainam Bowls With Roasted Chicken</h1>
+                                                    <h1
+                                                        class="text-sm text-cs-gray font-titleRegular md:line-clamp-2 tracking-tight hidden">
+                                                        Nasi hainam wangi dengan Paha Ayam Panggang. Lengkap dengan
+                                                        sambal
+                                                        dan
+                                                        kuah. Halal Ya</h1>
+                                                    <h1 class="font-bodyMedium text-lg text-cs-black">40.000</h1>
+                                                </div>
+                                                <div class="w-24 flex-none space-y-3">
+                                                    <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                                        alt="" class="aspect-square rounded-md h-24 object-cover">
+                                                </div>
+                                            </div>
+                                            <!-- button add -->
+                                            <div x-data="{ note: false }">
+                                                <div class="relative">
+                                                    <button
+                                                        class="border  w-full text-center py-3 border-primary rounded-full font-titleSemiBold text-xs text-primary hover:bg-primary hover:text-white transition-all"
+                                                        @click="open = true">Add</button>
+                                                    <!-- change button to count -->
+                                                    <div class="absolute top-0 left-0 w-full grid grid-cols-3 bg-white border-white  py-3 px-4"
+                                                        x-show="open">
+                                                        <!-- note -->
+                                                        <div class="col-span-1 text-xs font-titleRegular"
+                                                            @click="note = true">
+                                                            <i
+                                                                class="fa-regular fa-pen-to-square border rounded-full  hover:border-primary hover:bg-slate-100 p-2"></i>
+                                                        </div>
+                                                        <!-- count button -->
+                                                        <div
+                                                            class="col-span-2 text-xs font-titleRegular flex justify-between">
+                                                            <!-- minus -->
+                                                            <button>
+                                                                <i class="fa-regular fa-minus p-2 border rounded-full  hover:border-primary hover:bg-slate-100"
+                                                                    @click="open = !open"></i>
+                                                            </button>
+                                                            <!-- count -->
+                                                            <h1 class="font-titleRegular text-sm text-cs-black my-auto">
+                                                                1
+                                                            </h1>
+                                                            <!-- add -->
+                                                            <button>
+                                                                <i
+                                                                    class="fa-regular fa-plus p-2 border rounded-full  hover:border-primary hover:bg-slate-100"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- modal note -->
+                                                <div class="absolute bg-white h-full w-full top-0 left-0 rounded-md p-4 space-y-4"
+                                                    x-show="note">
+                                                    <div class="flex  justify-center">
+                                                        <div class="w-full space-y-3">
+                                                            <h1 class="font-titleSemiBold text-base text-center">Add
+                                                                Note
+                                                            </h1>
+                                                            <input type="text" name="" id=""
+                                                                class="border rounded-md font-titleRegular text-sm p-2 w-full"
+                                                                placeholder="Add note">
+                                                        </div>
+                                                    </div>
+                                                    <!-- Button -->
+                                                    <div class="flex space-x-3">
+                                                        <button @click="note = !open"
+                                                            class="font-titleRegular text-xs py-2 w-full  rounded-full text-slate-400">Cancel</button>
+                                                        <button @click="note = !open"
+                                                            class="font-titleSemiBold text-xs hover:border-white hover:bg-primary transition-all hover:text-white py-2 w-full border border-primary rounded-full text-primary">Add</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </a>
+
+                                </div>
                             </div>
                             <!-- menu 3 -->
 
                             <!-- menu 4 -->
-                            <div class="flex w-full">
-                                <a href="#" class="w-full">
-                                    <div
-                                        class="border bg-white p-4 w-full rounded-md flex space-x-4 space-y-2 hover:drop-shadow-md transition-all">
-                                        <div class="w-full space-y-2">
-                                            <h1
-                                                class="text-base text-cs-black font-titleLight line-clamp-2 tracking-tight">
-                                                Hainam Bowls With Roasted Chicken</h1>
-                                            <h1
-                                                class="text-sm text-cs-gray font-titleRegular line-clamp-2 tracking-tight">
-                                                Nasi hainam wangi dengan Paha Ayam Panggang. Lengkap dengan sambal dan
-                                                kuah. Halal Ya</h1>
-                                            <h1 class="font-bodyMedium text-lg text-cs-black">40.000</h1>
-                                        </div>
-                                        <div class="w-24 flex-none space-y-2">
-                                            <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                                alt="" class="aspect-square rounded-md h-24 object-cover">
-                                            <button
-                                                class="border w-full text-center py-1 border-primary rounded-md font-titleSemiBold text-xs text-primary hover:bg-primary hover:text-white transition-all">Add</button>
+                            <div x-data="{ open: false }">
+                                <div class="flex w-full">
+                                    <div href="#" class="w-full">
+                                        <div
+                                            class="border bg-white p-4 w-full rounded-md relative hover:drop-shadow-md transition-all space-y-4">
+                                            <div class=" flex space-x-4 space-y-2 ">
+                                                <div class="w-full space-y-2">
+                                                    <h1
+                                                        class="text-base text-cs-black font-titleRegular line-clamp-2 md:line-clamp-1 tracking-tight">
+                                                        Hainam Bowls With Roasted Chicken</h1>
+                                                    <h1
+                                                        class="text-sm text-cs-gray font-titleRegular md:line-clamp-2 tracking-tight hidden">
+                                                        Nasi hainam wangi dengan Paha Ayam Panggang. Lengkap dengan
+                                                        sambal
+                                                        dan
+                                                        kuah. Halal Ya</h1>
+                                                    <h1 class="font-bodyMedium text-lg text-cs-black">40.000</h1>
+                                                </div>
+                                                <div class="w-24 flex-none space-y-3">
+                                                    <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                                        alt="" class="aspect-square rounded-md h-24 object-cover">
+                                                </div>
+                                            </div>
+                                            <!-- button add -->
+                                            <div x-data="{ note: false }">
+                                                <div class="relative">
+                                                    <button
+                                                        class="border  w-full text-center py-3 border-primary rounded-full font-titleSemiBold text-xs text-primary hover:bg-primary hover:text-white transition-all"
+                                                        @click="open = true">Add</button>
+                                                    <!-- change button to count -->
+                                                    <div class="absolute top-0 left-0 w-full grid grid-cols-3 bg-white border-white  py-3 px-4"
+                                                        x-show="open">
+                                                        <!-- note -->
+                                                        <div class="col-span-1 text-xs font-titleRegular"
+                                                            @click="note = true">
+                                                            <i
+                                                                class="fa-regular fa-pen-to-square border rounded-full  hover:border-primary hover:bg-slate-100 p-2"></i>
+                                                        </div>
+                                                        <!-- count button -->
+                                                        <div
+                                                            class="col-span-2 text-xs font-titleRegular flex justify-between">
+                                                            <!-- minus -->
+                                                            <button>
+                                                                <i class="fa-regular fa-minus p-2 border rounded-full  hover:border-primary hover:bg-slate-100"
+                                                                    @click="open = !open"></i>
+                                                            </button>
+                                                            <!-- count -->
+                                                            <h1 class="font-titleRegular text-sm text-cs-black my-auto">
+                                                                1
+                                                            </h1>
+                                                            <!-- add -->
+                                                            <button>
+                                                                <i
+                                                                    class="fa-regular fa-plus p-2 border rounded-full  hover:border-primary hover:bg-slate-100"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- modal note -->
+                                                <div class="absolute bg-white h-full w-full top-0 left-0 rounded-md p-4 space-y-4"
+                                                    x-show="note">
+                                                    <div class="flex  justify-center">
+                                                        <div class="w-full space-y-3">
+                                                            <h1 class="font-titleSemiBold text-base text-center">Add
+                                                                Note
+                                                            </h1>
+                                                            <input type="text" name="" id=""
+                                                                class="border rounded-md font-titleRegular text-sm p-2 w-full"
+                                                                placeholder="Add note">
+                                                        </div>
+                                                    </div>
+                                                    <!-- Button -->
+                                                    <div class="flex space-x-3">
+                                                        <button @click="note = !open"
+                                                            class="font-titleRegular text-xs py-2 w-full  rounded-full text-slate-400">Cancel</button>
+                                                        <button @click="note = !open"
+                                                            class="font-titleSemiBold text-xs hover:border-white hover:bg-primary transition-all hover:text-white py-2 w-full border border-primary rounded-full text-primary">Add</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </a>
+
+                                </div>
                             </div>
                             <!-- menu 4 -->
+
+
                         </div>
                     </div>
                     <!-- end section 1 -->
@@ -509,6 +727,40 @@
     <!-- ============================== -->
     <!-- ========== End Main Body Section ========== -->
     <!-- ============================== -->
+
+
+    <!-- ========== Category FAB ========== -->
+    <section x-data="{ category: false }">
+        <button class="fixed bottom-4 right-4 md:hidden" @click="category = true">
+            <div class="bg-primary py-4 px-5 rounded-full drop-shadow-lg">
+                <i class="fa-solid fa-book-sparkles text-lg"></i>
+            </div>
+        </button>
+        <!-- modal view category -->
+        <div class="bg-white fixed z-50 top-0 left-0 w-full h-screen md:hidden" x-show="category">
+            <div class="border-b py-6 flex justify-between px-5">
+                <h1 class="font-titleSemiBold text-cs-black text-base text-center my-auto">Select Category</h1>
+                <button class="bg-slate-200 py-1 px-3 rounded-full my-auto" @click="category = !open"><i
+                        class="fa-regular fa-xmark"></i></button>
+            </div>
+            <div class="px-5  h-full ">
+                <div class="overflow-y-auto h-screen pb-24 divide-y">
+                    <div>
+                        <button class="py-4 font-titleRegular text-cs-black text-base">Breakfast</button>
+                    </div>
+                    <div>
+                        <button class="py-4 font-titleRegular text-cs-black text-base">Main Course</button>
+                    </div>
+                    <div>
+                        <button class="py-4 font-titleRegular text-cs-black text-base">Drink's</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end modal view category -->
+    </section>
+    <!-- ========== end Category FAB ========== -->
 
 
 
