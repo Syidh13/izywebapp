@@ -81,7 +81,7 @@
         <!-- end back icon for desktop -->
 
         <!-- ========== Button Section ========== -->
-        <div class="cs-container pt-2 md:pb-8 pb-20">
+        <div class="cs-container pt-2 md:pb-24 pb-40">
             <div class="md:grid md:grid-cols-4 gap-3">
 
                 <!-- grid category (for desktop) -->
@@ -731,7 +731,7 @@
 
     <!-- ========== Category FAB ========== -->
     <section x-data="{ category: false }">
-        <button class="fixed bottom-4 right-4 md:hidden" @click="category = true">
+        <button class="fixed bottom-20 right-4 md:hidden" @click="category = true">
             <div class="bg-primary py-4 px-5 rounded-full drop-shadow-lg">
                 <i class="fa-solid fa-book-sparkles text-lg"></i>
             </div>
@@ -761,6 +761,29 @@
         <!-- end modal view category -->
     </section>
     <!-- ========== end Category FAB ========== -->
+
+    <!-- ========== count FAB ========== -->
+    <section class="cs-container">
+        <button class="fixed bottom-4 px-4 md:px-0  md:max-w-md lg:right-36 md:right-4 right-0 w-full ">
+            <a href="#">
+                <div class="bg-white py-3 px-4 rounded-lg border drop-shadow-md grid grid-cols-6 gap-3">
+                    <div class="col-span-1">
+                        <h1 class="text-xs font-titleLight text-cs-gray">Item's</h1>
+                        <h1 class="font-titleRegular text-cs-black text-base text-center">1</h1>
+                    </div>
+                    <div class="col-span-4 border-l pl-3">
+                        <h1 class="text-xs font-titleLight text-cs-gray text-left">Total Price</h1>
+                        <h1 class="font-titleRegular text-cs-black text-base  text-left">IDR 20.000</h1>
+                    </div>
+                    <div class="col-span-1 my-auto text-right">
+                        <i class="fa-regular fa-angle-right py-2 px-3 bg-slate-200 rounded-full"></i>
+                    </div>
+                </div>
+            </a>
+        </button>
+
+    </section>
+    <!-- ========== end count FAB ========== -->
 
 
 
