@@ -664,6 +664,14 @@ video {
   top: 28.125rem;
 }
 
+.bottom-28 {
+  bottom: 7rem;
+}
+
+.bottom-24 {
+  bottom: 6rem;
+}
+
 .z-0 {
   z-index: 0;
 }
