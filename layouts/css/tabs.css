@@ -1,0 +1,8 @@
+button[aria-selected='true'] {
+  border-color: #4f46e5;
+  color: #4f46e5;
+}
+
+button:focus {
+  outline: none;
+}

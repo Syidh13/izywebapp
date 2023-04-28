@@ -18,6 +18,7 @@
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- end slick cdn -->
+    <link rel="stylesheet" href="./css/tabs.css">
 
 </head>
 
@@ -95,29 +96,105 @@
         </div>
         <!-- ========== end title Section ========== -->
 
+        <div class="flex w-full  justify-center py-4">
+            <div class="justify-center w-full max-w-2xl">
+                <!-- ========== Tab Section ========== -->
+                <div class="cs-container" x-data="{ openTab: 1,
+        activeClasses:'px-3 py-2  border  font-titleSemiBold bg-primary/5 text-primary  border-primary transition-all rounded-md',
+        inactiveClasses:' px-3 py-2  border border-slate-100 bg-slate-100 text-slate-500 rounded-md  font-titleRegular transition-all hover:bg-primary/5 hover:text-primary hover:font-titleSemiBold hover:border-primary'
+       }">
 
-        <!-- ========== Button Section ========== -->
-        <div class="cs-container lg:flex lg:justify-center cs-py-section">
-            <div class="md:grid-cols-3 lg:max-w-2xl w-full space-y-2">
-                <textarea name="" id="" cols="10" rows="3" placeholder="Input note in here"
-                    class="w-full font-bodyLight border-cs-gray rounded-md"></textarea>
-                <div class="flex justify-end">
-                    <button
-                        class="font-titleSemiBold text-white transition-colors hover:bg-primary-hover text-sm py-2 px-4 bg-primary rounded-md">Submit</button>
+                    <div class="space-y-3">
+                        <div>
+                            <h1 class="font-titleSemiBold text-cs-black tracking-tight">Choose a schedule options</h1>
+                        </div>
+                        <ul class="flex space-x-3">
+                            <li @click="openTab = 1" class="">
+                                <a :class="openTab === 1 ? activeClasses : inactiveClasses" href="#" class="text-sm">
+                                    Order Now</a>
+                            </li>
+                            <li @click="openTab = 2" class="">
+                                <a :class="openTab === 2 ? activeClasses : inactiveClasses" href="#" class="text-sm">
+                                    Order Later</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tab 1 -->
+                    <div x-show="openTab === 1">
+                        <section x-show="openTab === 1">
+
+                            <!-- text area -->
+                            <div class=" lg:flex lg:justify-center cs-py-section">
+                                <div class="w-full space-y-2">
+                                    <textarea name="" id="" cols="10" rows="3" placeholder="Input note in here"
+                                        class="w-full font-bodyLight border-cs-gray rounded-md"></textarea>
+                                    <div class="flex justify-end">
+                                        <button
+                                            class="font-titleSemiBold text-white transition-colors hover:bg-primary-hover text-sm py-2 px-4 bg-primary rounded-md">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end text area -->
+
+                        </section>
+                    </div>
+                    <!-- end Tab 1 -->
+
+                    <!-- Tab 2 -->
+                    <div x-show="openTab === 2">
+                        <section x-show="openTab === 2">
+                            <div class="cs-py-section space-y-3">
+
+                                <div class="md:grid md:grid-cols-2 md:gap-3 space-y-3 md:space-y-0">
+                                    <!-- input date -->
+                                    <div class="w-full">
+                                        <h1 class="font-titleSemiBold text-cs-black">Select Date</h1>
+                                        <input type="date" name="" id=""
+                                            class="border rounded-md border-cs-gray font-bodyRegular w-full">
+                                    </div>
+                                    <!-- end input date -->
+
+                                    <!-- input time -->
+                                    <div class="w-full">
+                                        <h1 class="font-titleSemiBold text-cs-black">Select Time</h1>
+                                        <input type="time" name="" id=""
+                                            class="border rounded-md border-cs-gray font-bodyRegular w-full">
+                                    </div>
+                                    <!-- end input time -->
+                                </div>
+
+                                <!-- text area -->
+                                <div class="w-full space-y-2">
+                                    <textarea name="" id="" cols="10" rows="3" placeholder="Input note in here"
+                                        class="w-full font-bodyLight border-cs-gray rounded-md"></textarea>
+                                    <div class="flex justify-end">
+                                        <button
+                                            class="font-titleSemiBold text-white transition-colors hover:bg-primary-hover text-sm py-2 px-4 bg-primary rounded-md">Submit</button>
+                                    </div>
+                                </div>
+                                <!-- end text area -->
+
+                            </div>
+
+
+
+
+                        </section>
+                    </div>
+                    <!-- end Tab 2 -->
+
                 </div>
+                <!-- ========== end Tab Section ========== -->
             </div>
-            <!-- ========== end Button Section ========== -->
-
-
         </div>
+
+
+
+
         <!-- ============================== -->
         <!-- ========== End Main Body Section ========== -->
         <!-- ============================== -->
-
-
-
-
-
 
 
 
